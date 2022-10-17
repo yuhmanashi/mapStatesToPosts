@@ -34,6 +34,7 @@ class NavBar extends React.Component {
     return username;
   }
 
+  //test
   render() {
       return (
         <div className="navbar">
