@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+/* font-family: 'Exo 2', sans-serif;
+font-family: 'Flamenco', cursive; */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.mainpage {
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url('https://mstp-dev.s3.us-west-2.amazonaws.com/utah-gd36c204b3_1920.jpg');
+    background-repeat:round;
+    background-size: cover;
+}
+
+.mainpagecontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.mainpagecontent > * {
+    margin: 20px;
+}
+/* .formbody {
+    border: 1.5px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+} */
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-family: 'Leckerli One', cursive;
+    font-size: 40px;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 5px;
+}

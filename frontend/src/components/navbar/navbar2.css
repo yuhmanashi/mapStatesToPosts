@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Lobster&display=swap');
+/* font-family: 'Leckerli One', cursive; greeting header 
+font-family: 'Lobster', cursive; words
+font-family: 'Mali', cursive;
+*/ 
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  background-color: rgb(223, 223, 223);
+  box-shadow: 1px 1px 10px rgb(180, 180, 180);
+}
+
+.navbar > div {
+  margin: 20px;
+}
+
+/* Logo */
+.nav-logo {
+  font-family: 'Leckerli One', cursive;
+  font-size: 25px;
+}
+
+.nav-logo a {
+  text-decoration: none;
+  color: #6287a2;
+}
+
+/* Nav buttons */
+.nav-buttons {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+
+  position: absolute;
+  right: 0;
+}
+
+/* create post */
+.create-post {
+  font-family: 'Lobster', cursive;
+  cursor: pointer;
+}
+
+.create-post > a {
+  text-decoration: underline;
+}
+
+/* dropdown */
+.user-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-icon svg {
+  background-color: transparent;
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+  font-size: 35px;
+  margin: 0;
+}
+
+.user-icon:hover {
+  cursor: pointer;
+}
+
+.user-icon:hover .user-dropdown{
+  display: block;
+}
+
+.user-dropdown {
+  list-style: none; 
+  position: absolute;
+  display: none;
+
+  padding: 0;
+  top: 45px;
+  right: 0;
+
+  width: 100px;
+
+  background-color: lightgrey;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+
+  z-index: 1;
+
+  font: bold 15px 'Open Sans Condensed', sans-serif;
+}
+
+.user-dropdown a {
+  text-decoration: none;
+  color: black;
+}
+
+.user-dropdown > * {
+  margin: 10px;
+}
+
+.user-dropdown hr {
+  border: none;
+  border-top: 1px solid black;
+  margin: 0;
+}
+
+.create-post:hover, .user-icon:hover svg, #profile a:hover, .user-dropdown > *:hover {
+  color: rgb(87, 87, 87);
+}

@@ -1,0 +1,16 @@
+.user_name{
+    display: grid;
+    justify-content: center;
+    font-size: 48px;
+    font-family: 'Leckerli One', cursive;
+}
+
+.user_posts{
+    display: flex;
+    justify-content: center;
+
+}
+
+/* body {
+    background-color: #80c8bc
+} */

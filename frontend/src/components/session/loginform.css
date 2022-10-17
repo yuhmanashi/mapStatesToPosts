@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Noto+Sans&family=Raleway:wght@100&family=Roboto:ital,wght@1,300&display=swap');
+/* font-family: 'Leckerli One', cursive; greeting header
+font-family: 'Noto Sans', sans-serif; textarea
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;  error message*/ 
+
+
+/* .signup-formbox {
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background: white;
+    width: 400px;
+} */
+
+
+/* button */
+.login-header, .signup-header {
+    text-align: center;
+    font-family: 'Leckerli One';
+    font-size: 20px;
+}
+
+.login-header .success {
+    color: rgb(77, 128, 2)
+}
+
+.login-header .register {
+    cursor: pointer;
+}
+
+.login-header > h2 {
+    font-family: 'Leckerli One';
+    color: black;
+}
+
+.login-formbox {
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background: white;
+    width: 300px;
+}
+
+
+.login-formbox .login-form input {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: none;
+    color: rgb(100, 100, 100);
+    background: rgb(235, 233, 233);
+    min-width: 250px;
+    padding: 7px;
+    font-family: 'Noto Sans';
+}
+
+
+.login-formbox .login-errors, .signup-formbox .signup-errors {
+    color: red;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-formbox .login-errors ul > li, .signup-formbox .signup-errors ul > li {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.login-formbox .login-form .loginbutton, .demouser {
+    border-radius: 15px;
+    background:rgb(57, 163, 57);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 7px;
+    cursor: pointer;
+    font-family: verdana;
+    width: 250px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-formbox .login-form .loginbutton:hover, .demouser:hover{
+    background-color: rgb(127, 207, 127);
+}
+
+
+
+.login-form{
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    max-width: 700px;
+}
+
+.register:hover {
+    text-decoration: underline;
+    color:rgb(64, 57, 163)
+}
+
+
+.signup-formbox {
+	font-family:verdana;
+	margin: 30px auto ;
+	padding: 30px;
+	background: white; /* You can change the main color of thew form here. */
+	font-size: 14px;
+	width:100%;
+	max-width:500px;
+	box-sizing: border-box;
+    border-radius: 15px;
+    
+}
+
+
+.signup-formbox .signup-form input {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: none;
+    color: rgb(100, 100, 100);
+    background: rgb(235, 233, 233);
+    min-width: 400px;
+    max-width: 500px;
+    padding: 7px;
+    font-family: 'Noto Sans';
+}
+
+input:focus {
+    outline: none
+}
+
+.signup-formbox .signup-form .signupbutton {
+    border-radius: 15px;
+    background:rgb(57, 163, 57);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 7px;
+    cursor: pointer;
+    min-width: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.signup-formbox .signup-form .signupbutton:hover{
+    background-color: rgb(127, 207, 127);
+}
+
+
+.signup-header > h2 {
+    font-family: 'Leckerli One';
+    color: black;
+}
+
+
+
+

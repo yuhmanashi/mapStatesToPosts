@@ -1,0 +1,74 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Leckerli+One&family=Noto+Sans&family=Raleway:wght@100&family=Roboto:ital,wght@1,300&family=Shadows+Into+Light&display=swap');
+/* font-family: 'Fredoka', sans-serif;
+font-family: 'Leckerli One', cursive;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Shadows Into Light', cursive; */
+
+/*State Info*/
+.state-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.state-top {
+  display: flex;
+}
+
+.morefiller {
+  height: 200px;
+}
+
+.filler {
+  border: 1px solid black;
+  min-width: 40%;
+}
+
+.state-info {
+  display: flex;
+  flex-direction: column;
+  background-color: #6287a2;
+  height: 100%;
+  padding: 25px;
+  border: 2px aliceblue solid;
+  min-width: 60%;
+}
+.state-info h1, h2 {
+  font-family: 'Noto Sans', sans-serif;
+  color: aliceblue;
+}
+
+.state-info p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  color: aliceblue;
+  font-size: 18px;
+}
+.state-info a {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(173, 183, 192);
+  font-family: 'Shadows Into Light', cursive; 
+}
+
+/*Posts*/
+.state-posts {
+  height: 500px;
+  overflow-y: auto;
+  border: 1px solid black;
+  min-width: 50%;
+}
+
+.state-posts div {
+  scroll-snap-align: start;
+}
+

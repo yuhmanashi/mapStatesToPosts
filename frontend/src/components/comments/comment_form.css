@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Noto+Sans&family=Raleway:wght@100&family=Roboto:ital,wght@1,300&family=Shadows+Into+Light&display=swap');
+/* font-family: 'Leckerli One', cursive;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Shadows Into Light', cursive; */
+
+.comment-form form input {
+
+    border-radius: 10px;
+    border: none;
+    background: rgb(207, 207, 207);
+    padding: 10px;
+    width: 100%;
+    margin-left: -10px;
+    color:rgb(133, 133, 133, 0.5)
+}
+
+.comment-form form input:focus {
+    color: black;
+
+}
+
+.create-comment{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.edit-comment-form {
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.edit-comment-form .form-header {
+    font-family: 'Leckerli One', cursive;
+    font-size: 20px;
+}
+
+.edit-comment-form input {
+    border: none;
+    background: rgb(207, 207, 207);
+    border-radius: 15px;
+    padding: 10px;
+}

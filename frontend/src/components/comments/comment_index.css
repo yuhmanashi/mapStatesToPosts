@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Noto+Sans&family=Raleway:wght@100&family=Roboto:ital,wght@1,300&family=Shadows+Into+Light&display=swap');
+/* font-family: 'Leckerli One', cursive;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Shadows Into Light', cursive; */
+
+/* Comment Container */
+ul.comment-container {
+    padding: 0;
+}
+
+/* Comment Items */
+.comment-box {
+  border: none;
+  padding: 10px;
+  /* border-radius: 10px; */
+}
+
+.comment-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-body {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family:'Leckerli One', cursive ;
+    font-family: 'Fredoka', sans-serif;
+    border:none;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.author {
+    font-family:'Leckerli One', cursive ;
+    text-decoration: none;
+}
+
+.author > a {
+    text-decoration: none;
+    color: black;
+}
+
+.comment-items{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+
+
+
+.author {
+    padding-left: 15px;
+    font-size: 18px;
+    color:  rgb(73, 63, 63);
+}
+
+.comment{
+    background: antiquewhite;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(2, 24, 34, 0.2);
+
+}
+
+.comment-button{
+    display: flex;
+    margin-right: 5px;
+}
+
+.comment-delete{
+    color: rgb(230, 222, 222);
+    padding-left: 5px;
+}
+
+.comment-delete:hover{
+    color: red;
+}
+
+.comment-edit{
+    color: rgb(230, 222, 222);
+    padding-left: 5px;
+}
+
+.comment-edit:hover{
+    color: rgb(117, 62, 62);
+}

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Leckerli+One&family=Noto+Sans&family=Raleway:wght@100&family=Roboto:ital,wght@1,300&family=Shadows+Into+Light&display=swap');
+/* font-family: 'Fredoka', sans-serif;
+font-family: 'Leckerli One', cursive;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Shadows Into Light', cursive; */
+
+/* Post Container */
+ul.post-container {
+  margin-top: 0;
+  padding: 0;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, minmax(345px, 1fr));
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Post Items */
+.state-name {
+  font-size: 20px;
+  font-family: 'Leckerli One', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.state-name > h3 {
+  text-decoration-line: underline;
+}
+
+.date {
+  font-size: 15px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.post-items {
+  border-radius: 5px;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  max-width: 400px;
+  box-shadow: 1px 3px 3px .6px rgb(211, 211, 211), -1px 2px 5px .6px rgb(199, 199, 199); 
+}
+
+
+.post-pic img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.post-body {
+    padding: auto;
+    font-family: 'Fredoka', sans-serif;
+  /* font-family: 'Leckerli One', cursive; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+.username {
+  padding-right: 10px;
+  padding-left: 2px;
+  color:  rgb(73, 63, 63);
+  font-size: 18px;
+  font-family: 'Leckerli One', cursive;
+}
+
+.caption {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: rgb(98, 164, 221);
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 5px 5px 10px 0px rgba(2, 24, 34, 0.2);
+}
+
+.edit-delete-buttons {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.username > a {
+  text-decoration: none;
+  color:black;
+}
+
+.edit-delete-buttons > button {
+  border: none;
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+}
