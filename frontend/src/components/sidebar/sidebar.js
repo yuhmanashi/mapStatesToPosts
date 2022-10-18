@@ -12,46 +12,7 @@ class Sidebar extends React.Component {
         return (
             <div className="sidebar">
                 <div className="sidebar-items">
-                    <h3>About Us</h3>
-                    <ul className="project-link">
-                        <h4>Project Repo</h4>
-                        <hr/>
-                        <li>
-                            <a href="https://github.com/KayiLeung/mapStatesToPost" target="_blank">
-                                <FaGithub /> mapStatesToPost
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul className='yao-xu'>
-                        <h4>Yao Xu</h4>
-                        <hr/>
-                        <li>
-                            <a href="https://github.com/yuhmanashi" target="_blank">
-                                <FaGithub /> Github
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/yaoxu03/" target="_blank">
-                                <FaLinkedin /> LinkedIn
-                            </a>
-                        </li>
-                    </ul>
-
-                    <ul className='dean-ding'>
-                        <h4>Dean Ding</h4>
-                        <hr/>
-                        <li>
-                            <a href="https://github.com/dingtianding" target="_blank">
-                                <FaGithub /> Github
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/deanding/" target="_blank">
-                                <FaLinkedin /> LinkedIn
-                            </a>
-                        </li>
-                    </ul>
+                    
                     {/* <ul>
                         <li className="drop-down-menu-1">
                         <a href="#" className="icon-home"><FaGithub /></a>

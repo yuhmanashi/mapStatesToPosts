@@ -46,6 +46,7 @@ font-family: 'Mali', cursive;
 /* create post */
 .create-post {
   font-family: 'Lobster', cursive;
+  font-size: 20px;
   cursor: pointer;
 }
 

@@ -45,6 +45,7 @@ class PostCreateForm extends React.Component{
       <div className="post-create-container">
         <form onSubmit={this.handleSubmit}>
           <h1>Create a New Post</h1>
+            <hr/>
             <label>Caption</label>
             <textarea 
               className="captionbody"

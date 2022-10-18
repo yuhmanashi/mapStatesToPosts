@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Lobster&display=swap');
+/* font-family: 'Leckerli One', cursive; greeting header 
+font-family: 'Lobster', cursive; words
+font-family: 'Mali', cursive;
+*/ 
+
+.about-us-modal-child {
+    display: flex;
+    justify-content: center;
+}
+
+.about-us-container {
+    background: rgb(221, 221, 221);
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+
+    text-align: center;
+
+    box-shadow: 1px 1px 10px rgb(180, 180, 180);
+
+    font-family: 'Lobster', cursive;
+}
+
+.about-us-container > hr {
+    margin: 0;
+}
+
+.about-us {
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+}
+
+.about-us ul {
+    font-size: 20px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    
+    padding: 5px;
+
+    margin: 5px;
+
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+}
+ 
+.about-us ul > * {
+    margin: 5px;
+}
+
+.about-us ul li {
+    font-size: 30px;    
+}
+
+.about-us a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin: 5px;
+
+    display: flex;
+}
+
+.about-us a:hover {
+    cursor: pointer;
+}
