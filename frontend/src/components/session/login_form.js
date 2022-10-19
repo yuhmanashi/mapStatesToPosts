@@ -97,7 +97,7 @@ class LoginForm extends React.Component {
       <div className="login-formbox">
         <div className="login-header">
           <h2>Log In</h2>
-          <div className='register' onClick={this.handleModal}>or click here to register!</div>
+          {/* <div className='register' onClick={this.handleModal}>or click here to register!</div> */}
           <hr className="hr-top" />
         </div>
         

@@ -5,9 +5,7 @@ import Splash from './components/splash.jsx'
 import About from './components/about.jsx'
 import Features from './components/features.jsx'
 import NavBar from './components/navbar.jsx'
-import LoginFormContainer from '../session/login_form_container';
 
-import Button from "@mui/material/Button";
 import './stylesheets/reset.css';
 import './stylesheets/main.css';
 

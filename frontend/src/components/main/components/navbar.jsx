@@ -1,7 +1,6 @@
 import "../stylesheets/navbar.scss";
 
 function NavBar() {
-
   return (
     <div className="navbar">
       <div className="navbar-left">
@@ -12,6 +11,7 @@ function NavBar() {
           />
         </div>
       </div>
+
       <div className="navbar-right">
         <a href="https://linkedin.com/in//" target="_blank">
           <button className="nav-button">

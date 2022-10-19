@@ -40,6 +40,15 @@
     align-items: center;
     color: #ffddd1;
 }
+.splash-modal {
+    position: absolute;
+    top: 600px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .splash-center-container {
     min-width: 100%;

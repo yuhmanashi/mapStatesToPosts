@@ -5,6 +5,11 @@ import Splash1 from './svgs/splash-1.jsx'
 import Splash2 from './svgs/splash-2.jsx'
 import Splash3 from './svgs/splash-3.jsx'
 
+import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
+import Modal from '@mui/material/Modal';
+import NestedModal from './modal.jsx';
+
 
 function Splash() {
     const [scrollTop, setScrollTop] = useState(0);
@@ -46,6 +51,7 @@ function Splash() {
         let splashCircle = document.getElementById('splash-circle')
         let splashBackground = document.getElementById('splash-background')
 
+
         document.addEventListener('scroll', function(){
             let scrollValue = window.scrollY;
             setScrollTop(scrollValue)
@@ -62,6 +68,8 @@ function Splash() {
         })
     }, [window.scrollY])
 
+
+
     return (
         <>
             <div id='splash-background' className='splash-background'/>
@@ -77,7 +85,10 @@ function Splash() {
                     <div className='states'>
                         <h4>{states[stateIndex]}</h4>
                     </div>
-                </div>   
+                </div> 
+                <div className='splash-modal'>
+                    <NestedModal/>
+                </div> 
             </div>       
             <div id='splash-3'className='splash-asset'>
                 <Splash3/>
