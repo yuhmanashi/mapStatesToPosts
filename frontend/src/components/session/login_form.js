@@ -1,5 +1,6 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { TextField, Button } from "@mui/material";
+import { Link, withRouter } from "react-router-dom";
 import "./loginform.css"
 
 class LoginForm extends React.Component {
@@ -15,17 +16,8 @@ class LoginForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.renderErrors = this.renderErrors.bind(this);
     this.handleModal = this.handleModal.bind(this);
-    // this.renderSignup = this.renderSignup.bind(this);
     this.demoUser = this.demoUser.bind(this);
   }
-
-  // componentWillReceiveProps(nextProps) {
-  //   if (nextProps.currentUser === true) {
-  //     this.props.history.push('/home');
-  //   }
-
-  //   this.setState({errors: nextProps.errors})
-  // }
 
   update(field) {
     return e => this.setState({
@@ -66,21 +58,6 @@ class LoginForm extends React.Component {
     this.props.openModal('signup')
   }
 
-  // renderSignup(){
-  //   if (this.props.signedIn) {
-  //     return(
-  //       <div className='success'>
-  //         <p>You're registered now!</p>
-  //         <p>Please log in!</p>
-  //       </div>
-  //     )
-  //   } else {
-  //     return(
-  //       <div className='register' onClick={this.handleModal}>or click here to register!</div>
-  //     )
-  //   }
-  // }
-
   demoUser(e){
     e.preventDefault();
 
@@ -107,23 +84,58 @@ class LoginForm extends React.Component {
         
         <form className='login-form'>
           <div>
-              <input type="text"
+              <TextField type="text"
                 value={this.state.email}
                 onChange={this.update('email')}
-                placeholder="Email"
+                label={
+                  this.state.errors.emailOrUsername ||
+                  this.state.errors.username
+                    ? this.state.errors.emailOrUsername ||
+                      this.state.errors.username
+                    : "Email or Username"
+                }
+                variant="outlined"
+                size="small"
+                sx={{ width: 350 }}
               />
             <br/>
-              <input type="password"
+            <br/>
+
+              <TextField type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
-                placeholder="Password"
+                label={
+                  this.state.errors.password
+                    ? this.state.errors.password
+                    : "Password"
+                }
+                variant="outlined"
+                size="small"
+                sx={{ width: 350 }}
               />
             <br/>
-            <div className="demouser" onClick={this.demoUser}>Demo User</div>
+            {/* <div className="demouser" onClick={this.demoUser}>Demo User</div> */}
+            <Button
+                onClick={(e) => this.demoUser(e, true)}
+                variant="contained"
+                sx={{ margin: "0.5em 0",
+                width: 350 }}
+              >
+                Demo User
+              </Button>
             <br/>
-            <div className="loginbutton" onClick={this.handleSubmit}>Login</div>
+            {/* <div className="loginbutton" onClick={this.handleSubmit}>Login</div> */}
+            <Button
+                onClick={(e) => this.handleSubmit(e, true)}
+                variant="contained"
+                sx={{ margin: "0.5em 0",
+                width: 350  }}
+              >
+                Log in
+              </Button>
           </div>
         </form>
+        <h3>Don't have an account?</h3>
       </div>
     );
   }

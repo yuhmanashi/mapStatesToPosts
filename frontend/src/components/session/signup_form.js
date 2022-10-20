@@ -1,6 +1,7 @@
 import React from 'react';
+import { TextField, Button } from "@mui/material";
 import { withRouter } from 'react-router-dom';
-import "./form.css"
+import "./loginform.css"
 
 class SignupForm extends React.Component {
   constructor(props) {
@@ -87,7 +88,6 @@ class SignupForm extends React.Component {
       <div className="signup-formbox">
         <div className="signup-header">
           <h2>Sign Up!</h2>
-          <p>Its quick and easy!</p>
           <hr className="hr-top" />
         </div>
 
@@ -98,31 +98,67 @@ class SignupForm extends React.Component {
         <form className="signup-form">
           <div>
             <br/>
-              <input type="text"
+              <TextField type="text"
                 value={this.state.username}
                 onChange={this.update('username')}
-                placeholder="Username"
+                label={
+                  this.state.errors.password
+                    ? this.state.errors.password
+                    : "Username"
+                }
+                variant="outlined"
+                size="small"
+                sx={{ width: 350 }}
               />
             <br/>
-              <input type="text"
+              <TextField type="text"
                 value={this.state.email}
                 onChange={this.update('email')}
-                placeholder="Email"
+                label={
+                  this.state.errors.password
+                    ? this.state.errors.password
+                    : "Email"
+                }
+                variant="outlined"
+                size="small"
+                sx={{ width: 350 }}
               />
             <br/>
-              <input type="password"
+              <TextField type="password"
                 value={this.state.password}
                 onChange={this.update('password')}
-                placeholder="Password"
+                label={
+                  this.state.errors.password
+                    ? this.state.errors.password
+                    : "Password"
+                }
+                variant="outlined"
+                size="small"
+                sx={{ width: 350 }}
               />
             <br/>
-              <input type="password"
+              <TextField type="password"
                 value={this.state.password2}
                 onChange={this.update('password2')}
-                placeholder="Confirm Password"
+                label={
+                  this.state.errors.password
+                    ? this.state.errors.password
+                    : "Confirm Password"
+                }
+                variant="outlined"
+                size="small"
+                sx={{ width: 350 }}
               />
             <br/>
-            <div className="signupbutton" onClick={this.handleSubmit}>Signup</div>
+            {/* <div className="signupbutton" onClick={this.handleSubmit}>Signup</div> */}
+            <Button
+                onClick={(e) => this.handleSubmit(e, true)}
+                variant="contained"
+                sx={{ margin: "0.5em 0",
+                width: 350 }}
+              >
+                Signup
+              </Button>
           </div>
         </form>
       </div>

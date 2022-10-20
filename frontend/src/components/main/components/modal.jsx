@@ -32,9 +32,13 @@ function ChildModal() {
     setOpen(false);
   };
 
+
   return (
     <React.Fragment>
-      <Button onClick={handleOpen}>Open Child Modal</Button>
+      
+      <Button onClick={handleOpen} variant="contained" sx={{ margin: "0.5em 1.5em",
+                width: 350
+              }}>Signup Instead</Button>
       <Modal
         hideBackdrop
         open={open}
@@ -42,12 +46,12 @@ function ChildModal() {
         aria-labelledby="child-modal-title"
         aria-describedby="child-modal-description"
       >
-        <Box sx={{ ...style, width: 200 }}>
-          <h2 id="child-modal-title">Text in a child modal</h2>
+        <Box sx={{ ...style, width: 400 }}>
+          <h2 id="child-modal-title">Sign up Form</h2>
           <p id="child-modal-description">
             <SignUpForm1Container/>
           </p>
-          <Button onClick={handleClose}>Close Child Modal</Button>
+          <Button onClick={handleClose}>Return to Log in</Button>
         </Box>
       </Modal>
     </React.Fragment>
@@ -62,6 +66,7 @@ export default function NestedModal() {
   const handleClose = () => {
     setOpen(false);
   };
+
 
   return (
     <div className="modal-button">
