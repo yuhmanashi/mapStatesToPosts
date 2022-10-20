@@ -1,0 +1,220 @@
+
+
+.splash-asset {
+    z-index: 5;
+    position: absolute;
+    min-width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.splash-asset-border {
+    z-index: 8;
+    position: absolute;
+    min-width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.splash-asset > svg {
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.splash-asset-border > svg{
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.splash-text {
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffddd1;
+}
+.splash-modal {
+    position: absolute;
+    top: 600px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.splash-center-container {
+    min-width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.states > h4 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.states {
+    opacity: 0%;
+    animation: slideIn 1s ease-out 0s infinite normal, fadeIn 1s infinite normal;
+    position: relative;
+}
+
+@keyframes slideIn {
+    0% {top: 5px}
+    100% {top: 0px}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 50%}
+    25% {opacity: 50%}
+    50% {opacity: 100%}
+    80% {opacity: 100%}
+    90% {opacity: 50%}
+    100% {opacity: 0%}
+}
+
+.splash-text > h1 {
+    font-size: 70px;
+    font-weight: 700;
+    overflow: hidden;
+    border-right: .08em solid rgb(255, 255, 255); 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .025em; 
+    animation: 
+      typing 2s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255, .5); }
+  }
+
+.main-2 {
+    position: absolute;
+}
+
+#splash-0-left {
+    top: -10px;
+    opacity: 95%;
+}
+
+#splash-0-right {
+    z-index: 13;
+    top: -10px;
+    opacity: 95%;
+}
+
+#splash-1 {
+    z-index: 12;
+    top: -68px
+}
+
+#splash-3 {
+    z-index: 11;
+    top: -65px;
+}
+
+#splash-2 {
+    top: 10px;
+}
+
+#splash-4 {
+    top: 10px;
+}
+
+#splash-5 {
+    z-index: 4;
+    top: 10px;
+}
+
+.splash-background {
+    position: fixed;
+    background: linear-gradient(to right, #0291b3, #028baf);
+    min-height: 100vh;
+    min-width: 500%;
+    overflow-x: hidden;
+    top: 0px;
+}
+
+.splash-stars {
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url('https://mstp-dev.s3.us-west-2.amazonaws.com/utah-gd36c204b3_1920.jpg');
+    background-repeat: round;
+    // background-size: cover;
+}
+
+.splash-circle {
+    z-index: 3;
+    position: relative;
+    background-color: orange;
+    min-width: 250px;
+    min-height: 250px;
+    border-radius: 1000px;
+    top: 130px;
+    margin-left: 50%;
+    margin-right: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f79a8a;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.splash-circle > h5 {
+    animation: slowPulse 7.5s ease 2.5s infinite normal;
+    opacity: 10%;
+    font-size: 24px;
+    color:black;
+}
+
+@keyframes slowPulse {
+    0% {opacity: 0%}
+    50% {opacity: 100%}
+    100% {opacity: 0%}
+}
+
+.splash-circle:hover {
+    background-color: #7c3a23;
+}
+
+@keyframes flying {
+    0%{ left: 100vw }
+    100%{ left: -50vw }
+}
+
+@media (max-width: 750px) {
+    .splash-text > h1 {
+        font-size: 60px;
+    }
+    .states > h4 {
+        font-size: 27.5px;
+    }
+    #splash-0-left {
+        top: -10px;
+    }
+}

@@ -1,6 +1,14 @@
-import React from 'react';
-import LoginFormContainer from '../session/login_form_container';
-import './main.css'
+import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
+
+import Splash from './components/splash.jsx'
+import About from './components/about.jsx'
+import Features from './components/features.jsx'
+import NavBar from './components/navbar.jsx'
+
+import './stylesheets/reset.css';
+import './stylesheets/main.css';
+
 
 class MainPage extends React.Component {
   constructor(props){
@@ -19,20 +27,21 @@ class MainPage extends React.Component {
 
   render() {
     return (
-      <div className="mainpage">
-        <div className="mainpagecontent">
-          <div className="header">
-            <h1>MapStatesToPost</h1>
+      <div className="main-index">
+        <NavBar />
+        <div className="App">
+          <div className='main-1'>
+            <Splash/>
           </div>
-          <div className='formbody'>
-            <LoginFormContainer />
+          <div className='main-1-5'>
+            <About/>
           </div>
-          <div className="buttons">
-            {/* <div className="login button" onClick={this.openLoginForm}>Log in</div> */}
-            {/* <div className="signup button" onClick={this.openSignupForm}>Signup</div> */}
+          <div className='main-2'>
+            <Features/>
           </div>
         </div>
       </div>
+
     );
   }
 }
