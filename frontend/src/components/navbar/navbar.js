@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import './navbar2.css'
+import './navbar.css'
 import { FaGithub, FaRegUserCircle, FaLinkedin } from 'react-icons/fa'
 
 

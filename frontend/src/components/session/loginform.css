@@ -17,8 +17,9 @@ font-family: 'Roboto', sans-serif;  error message*/
 /* button */
 .login-header, .signup-header {
     text-align: center;
-    font-family: 'Leckerli One';
+    font-family: 'Roboto';
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .login-header .success {
@@ -30,22 +31,22 @@ font-family: 'Roboto', sans-serif;  error message*/
 }
 
 .login-header > h2 {
-    font-family: 'Leckerli One';
+    font-family: 'Roboto';
     color: black;
 }
 
-.login-formbox {
+/* .login-formbox {
     padding: 10px;
     border-radius: 15px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     background: white;
     width: 300px;
-}
+} */
 
 
 .login-formbox .login-form input {
     margin-bottom: 10px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     border: none;
     color: rgb(100, 100, 100);
     background: rgb(235, 233, 233);
@@ -100,7 +101,7 @@ font-family: 'Roboto', sans-serif;  error message*/
 
 
 .signup-formbox {
-	font-family:verdana;
+	font-family: 'Roboto';
 	margin: 30px auto ;
 	padding: 30px;
 	background: white; /* You can change the main color of thew form here. */
@@ -109,20 +110,19 @@ font-family: 'Roboto', sans-serif;  error message*/
 	max-width:500px;
 	box-sizing: border-box;
     border-radius: 15px;
-    
+    z-index: ;
 }
 
 
 .signup-formbox .signup-form input {
     margin-bottom: 10px;
-    border-radius: 15px;
     border: none;
-    color: rgb(100, 100, 100);
-    background: rgb(235, 233, 233);
-    min-width: 400px;
-    max-width: 500px;
+    /* color: rgb(100, 100, 100); */
+    /* background: rgb(235, 233, 233); */
+    /* min-width: 400px;
+    max-width: 500px; */
     padding: 7px;
-    font-family: 'Noto Sans';
+    font-family: 'Roboto';
 }
 
 input:focus {
@@ -138,7 +138,7 @@ input:focus {
     padding: 7px;
     cursor: pointer;
     min-width: 400px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto';
     
 }
 
@@ -148,10 +148,24 @@ input:focus {
 
 
 .signup-header > h2 {
-    font-family: 'Leckerli One';
+    font-family: 'Roboto';
     color: black;
+}
+h3 {
+    position:relative; 
+    left:25px
 }
 
 
 
+.authformbox {
+    border: 1.5px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    background: white;
+}
 
+.submitbutton {
+    border: 1.5px solid black;
+    border-radius: 15px;
+}
