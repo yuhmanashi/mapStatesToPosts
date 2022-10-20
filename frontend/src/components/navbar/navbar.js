@@ -8,7 +8,8 @@ class NavBar extends React.Component {
   constructor(props) {
     super(props);
     this.logoutUser = this.logoutUser.bind(this);
-    this.openModal = this.openModal.bind(this);
+    this.createPostModal = this.createPostModal.bind(this);
+    this.aboutUsModal = this.aboutUsModal.bind(this);
     this.handleUser = this.handleUser.bind(this);
   }
 
@@ -18,8 +19,12 @@ class NavBar extends React.Component {
   }
 
   // Selectively render links dependent on whether the user is logged in
-  openModal(){
+  createPostModal(){
     this.props.openModal('createpost');
+  }
+
+  aboutUsModal(){
+    this.props.openModal('about-us')
   }
 
   handleUser() {
@@ -42,7 +47,7 @@ class NavBar extends React.Component {
             </div>
             
             <div className='nav-buttons'>
-              <div className='create-post' onClick={this.openModal}>Create Post</div>
+              <div className='create-post' onClick={this.createPostModal}>Create Post</div>
 
               <div className='user-icon'>
                 <FaRegUserCircle />
@@ -50,7 +55,7 @@ class NavBar extends React.Component {
                   <div id='profile'>
                     <Link to={`/users/${this.props.userId}`}>Profile</Link>
                   </div>
-                  <div id='about-us'>About Us</div>
+                  <div id='about-us' onClick={this.aboutUsModal}>About Us</div>
                   <hr/>
                   <div id='logout-btn' onClick={this.props.logout}>Logout</div>
                 </ul>

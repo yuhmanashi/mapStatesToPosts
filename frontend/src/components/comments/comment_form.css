@@ -13,7 +13,8 @@ font-family: 'Shadows Into Light', cursive; */
     padding: 10px;
     width: 100%;
     margin-left: -10px;
-    color:rgb(133, 133, 133, 0.5)
+    color:rgb(133, 133, 133, 0.5);
+    font-size: min(max(12px, 2.2vw), 16px);
 }
 
 .comment-form form input:focus {

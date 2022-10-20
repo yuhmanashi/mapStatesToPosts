@@ -61,7 +61,7 @@ class HomePage extends Component {
           <div className="content">
             <div className="top">
               <div className="home-map">
-                <USAMap customize={this.statesFilling()} onClick={this.mapHandler} />
+                <USAMap title='' customize={this.statesFilling()} onClick={this.mapHandler} />
                 <p>Click on a state to view the state's page!</p>
               </div>
 
@@ -74,8 +74,12 @@ class HomePage extends Component {
                 </div>
               </div>
             </div>
-            <div className= "scroller">
-              <PostsIndexContainer posts={posts} maxPosts={12}/>
+           
+            {/* <PostsIndexContainer posts={posts} maxPosts={1}/> */}
+            <div className='bottom'>
+              <div className= "scroller">
+                <PostsIndexContainer posts={posts} maxPosts={4}/>
+              </div>
             </div>
           </div>
         </main>

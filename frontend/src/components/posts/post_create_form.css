@@ -9,6 +9,7 @@ font-family: 'Shadows Into Light', cursive; */
   background-color: white;
   padding: 20px;
   border-radius: 15px;
+  box-shadow: 1px 1px 10px rgb(180, 180, 180);
 }
 
 .post-create-container > form {
@@ -18,13 +19,14 @@ font-family: 'Shadows Into Light', cursive; */
 }
 
 .captionbody {
-  border-radius: 15px;
+  border-radius: 10px;
   font-family: 'Noto Sans', sans-serif;
   padding: 10px;
+  resize: none;
 }
 
 .state {
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 5px;
 }
 

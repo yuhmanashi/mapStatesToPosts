@@ -15,6 +15,9 @@ ul.comment-container {
   border: none;
   padding: 10px;
   /* border-radius: 10px; */
+  display: flex;
+  max-height: 12%;
+  /* overflow-y: auto; */
 }
 
 .comment-container{
@@ -40,6 +43,11 @@ ul.comment-container {
 .author > a {
     text-decoration: none;
     color: black;
+    font-size: min(max(14px, 2.3vw), 16px);
+}
+
+.comment {
+    font-size: min(max(12px, 2.5vw), 16px);
 }
 
 .comment-items{
@@ -48,9 +56,6 @@ ul.comment-container {
     align-items: center;
     flex-direction: row-reverse;
 }
-
-
-
 
 .author {
     padding-left: 15px;

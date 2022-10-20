@@ -4,6 +4,7 @@ import LoginFormContainer from '../session/login_form_container';
 import EditCommentFormContainer from '../comments/edit_comment_form_container';
 import PostCreateContainer from '../posts/post_create_container';
 import EditPostFormContainer from '../posts/edit_post_form_container';
+import AboutUs from '../home/about_us';
 import "./modal.css"
 
 class Modal extends React.Component {
@@ -40,6 +41,9 @@ class Modal extends React.Component {
                 break;
             case 'editpost':
                 form = <EditPostFormContainer />;
+                break;
+            case 'about-us':
+                form = <AboutUs />
                 break;
             default:
                 return null;
