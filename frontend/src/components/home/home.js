@@ -74,8 +74,12 @@ class HomePage extends Component {
                 </div>
               </div>
             </div>
-            <div className= "scroller">
-              <PostsIndexContainer posts={posts} maxPosts={12}/>
+           
+            {/* <PostsIndexContainer posts={posts} maxPosts={1}/> */}
+            <div className='bottom'>
+              <div className= "scroller">
+                <PostsIndexContainer posts={posts} maxPosts={4}/>
+              </div>
             </div>
           </div>
         </main>

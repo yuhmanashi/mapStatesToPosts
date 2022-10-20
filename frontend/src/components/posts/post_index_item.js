@@ -27,8 +27,6 @@ class PostIndexItem extends React.Component {
     return `${month} ${day}, ${year}`
   }
 
-  
-
   handleUser() {
     const { post, users } = this.props;
     let username;
@@ -60,52 +58,49 @@ class PostIndexItem extends React.Component {
     const abberviation = post.stateName
 
     return (
-      <div className="post-items">
-        <div className="post-box">
-          <div className="state-name">
-            <h3>{statesData[abberviation].name}</h3>
+      <div className="post">
+        
+          <div className="title">
+            <div className='state-name'>{statesData[abberviation].name}</div>
             <div className="date">
               {this.handleDate()}
             </div>
           </div>
-
+          
           <div className="post-pic">
             <img src={`${post.photo.location}`} />
           </div>
-          <br />
-          <div className="post-body">
-            <div className="body-top">
-              <div className="username">
-                <Link to={`/users/${post.user}`}>
-                  {this.handleUser()}
-                </Link>
-              </div>
-            </div>
 
-            <div className="body-mid">
-              <p className="caption">
-                {post.caption}
-              </p>
+          <div className="post-body">          
+            <div className="username">
+              <Link to={`/users/${post.user}`}>
+                {this.handleUser()}
+              </Link>
             </div>
-
+            
+            <div className="caption">
+              {post.caption}
+            </div>
           </div>
 
           <div className='comment-box'>
             <CommentIndexContainer postId={post._id} />
-            <br />
+          </div>
+
+          <div className='post-bottom'>
             <CreateCommentContainer postId={post._id} />
-          </div>
+            <br />
+            <div className='edit-delete-buttons'>
+              <button id='post-edit' onClick={this.openModal}>
+                <MdEdit/>
+              </button>
+              <button id='post-delete' onClick={this.handleDelete}>
+                <MdDelete/>
+              </button>
+            </div>
 
-          <div className='edit-delete-buttons'>
-            <button id='post-edit' onClick={this.openModal}>
-              <MdEdit/>
-            </button>
-            <button id='post-delete' onClick={this.handleDelete}>
-              <MdDelete/>
-            </button>
           </div>
-
-        </div>
+        
       </div>
     )
   }
