@@ -5,6 +5,13 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Shadows Into Light', cursive; */
 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&family=Kalam&family=Merriweather&family=Titan+One&display=swap');
+/* font-family: 'Courgette', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Titan One', cursive; */
+
 .comment-form form input {
 
     border-radius: 10px;
@@ -23,7 +30,7 @@ font-family: 'Shadows Into Light', cursive; */
 }
 
 .create-comment{
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Kalam', cursive;
 }
 
 .edit-comment-form {

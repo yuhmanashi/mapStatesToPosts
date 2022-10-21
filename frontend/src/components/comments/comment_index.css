@@ -5,6 +5,13 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Shadows Into Light', cursive; */
 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&family=Kalam&family=Merriweather&family=Titan+One&display=swap');
+/* font-family: 'Courgette', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Titan One', cursive; */
+
 /* Comment Container */
 ul.comment-container {
     padding: 0;
@@ -28,26 +35,25 @@ ul.comment-container {
 .comment-body {
     display: flex;
     flex-direction: row-reverse;
-    font-family:'Leckerli One', cursive ;
-    font-family: 'Fredoka', sans-serif;
     border:none;
     align-items: center;
     padding-bottom: 5px;
 }
 
 .author {
-    font-family:'Leckerli One', cursive ;
     text-decoration: none;
 }
 
 .author > a {
+    font-family: 'Courgette', cursive;
     text-decoration: none;
     color: black;
     font-size: min(max(14px, 2.3vw), 16px);
 }
 
 .comment {
-    font-size: min(max(12px, 2.5vw), 16px);
+    font-family: 'Kalam', cursive;
+    font-size: min(max(12px, 2.5vw), 15px);
 }
 
 .comment-items{

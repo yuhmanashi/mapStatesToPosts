@@ -6,6 +6,13 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Shadows Into Light', cursive; */
 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&family=Kalam&family=Merriweather&family=Titan+One&display=swap');
+/* font-family: 'Courgette', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Titan One', cursive; */
+
 /* Post Container */
 /* .post-container {
   margin-top: 0;
@@ -45,7 +52,6 @@ font-family: 'Shadows Into Light', cursive; */
 /* Post Content */
 /* State Name */
 .title {
-  font-family: 'Leckerli One', cursive;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,6 +60,7 @@ font-family: 'Shadows Into Light', cursive; */
 }
 
 .state-name {
+  font-family: 'Courgette', cursive;
   text-decoration-line: underline;
   font-size: min(max(18px, 1.6vw), 24px);
 }
@@ -78,7 +85,6 @@ font-family: 'Shadows Into Light', cursive; */
 
 .post-body {
   padding: auto;
-  font-family: 'Fredoka', sans-serif;
 
   display: flex;
   flex-direction: column;
@@ -88,7 +94,10 @@ font-family: 'Shadows Into Light', cursive; */
 .username {
   color:  rgb(73, 63, 63);
   font-size: min(max(14px, 2vw), 18px);
-  font-family: 'Leckerli One', cursive;
+}
+
+.username a {
+  font-family: 'Courgette', cursive;
 }
 
 .caption {
@@ -99,6 +108,8 @@ font-family: 'Shadows Into Light', cursive; */
   padding: 10px;
   box-shadow: 5px 5px 10px 0px rgba(2, 24, 34, 0.2);
   font-size: min(max(13px, 2.3vw), 16px);
+
+  font-family: 'Kalam', cursive;
 }
 
 .edit-delete-buttons {

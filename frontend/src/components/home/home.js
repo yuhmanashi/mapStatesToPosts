@@ -62,16 +62,19 @@ class HomePage extends Component {
             <div className="top">
               <div className="home-map">
                 <USAMap title='' customize={this.statesFilling()} onClick={this.mapHandler} />
-                <p>Click on a state to view the state's page!</p>
+                <div className='home-tag'>Click on a state to view the state's page!</div>
               </div>
 
               <div className="placehold">
-                Trending <FaFire/>
+                <div className='trending-title'>Trending <FaFire/></div>
+                <hr/>
+                <a href="">California</a>
                 <br/>
-                <div className="trending-content">
+                <p>Everyone is visiting California right now!</p>
+                {/* <div className="trending-content">
                   <a href="">California</a>
                   <p>Everyone is visiting California right now!</p>
-                </div>
+                </div> */}
               </div>
             </div>
            

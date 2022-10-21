@@ -7,6 +7,13 @@ font-family: 'Shadows Into Light', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Quicksand', sans-serif; */
 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&family=Kalam&family=Merriweather&family=Titan+One&display=swap');
+/* font-family: 'Courgette', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Titan One', cursive; */
+
 html, body {
     height: 100%;
     width: 100%;
@@ -67,14 +74,19 @@ html, body {
     font-family: 'Quicksand', sans-serif;
     background: white;
     color: black;
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 200px;
 }
 
-.placehold > svg {
+.trending-title > svg {
     color: rgb(255, 60, 0);
 }
 
-.placehold > p {
-
+.trending-content {
+    
 }
 
 /* Map */
@@ -97,6 +109,12 @@ html, body {
     max-height: 100%;
     height: auto;
     cursor: pointer;
+}
+
+.home-tag {
+    font-size: min(max(14px, 1.2vw), 22px);
+    font-family: 'Merriweather', serif;
+    margin: 5px;
 }
 
 /* .home_container {

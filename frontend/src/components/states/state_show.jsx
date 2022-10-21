@@ -56,7 +56,7 @@ class StateShow extends React.Component{
             <div className="state-top">
               {/* change to modal */}
               <div className="state-info">
-                <Link to={`/`}><RiRoadMapFill/> Back to Map </Link>
+                {/* <Link to={`/`}><RiRoadMapFill/> Back to Map </Link> */}
                 <div>
                   <h1>{statesData[res].name}</h1>
                   <p>{statesData[res].description}</p>
@@ -77,7 +77,7 @@ class StateShow extends React.Component{
 
               <div className="filler">
                 <h1>Most Recent Photo</h1>
-                <img src={latestImageUrl} alt=""/>
+                {/* <img src={latestImageUrl} alt=""/> */}
               </div>
             </div>
 
