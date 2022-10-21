@@ -11,6 +11,8 @@ import { MdTravelExplore } from 'react-icons/md'
 import { RiChatSmileFill, RiRoadMapFill} from 'react-icons/ri'
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import Box from '@mui/material/Box';
+
 
 import data from '../../data/usa-map-dimensions'
 
