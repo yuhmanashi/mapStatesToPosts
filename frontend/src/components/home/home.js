@@ -58,24 +58,42 @@ class HomePage extends Component {
 
         <main className="main">
           <div className="content">
+            <h3>Your Map</h3>
             <div className="top">
               <div className="home-map">
                 <USAMap title='' customize={this.statesFilling()} onClick={this.mapHandler} />
-                <p>Click on a state to view the state's page!</p>
+                <div className='home-tag'>Click on a state to view the state's page!</div>
               </div>
 
               <div className="placehold">
-                Trending <FaFire/>
-                <br/>
-                <div className="trending-content">
+                <div className='legend'>
+                  <div>Legend</div>
+                  <div id='greenbox'>
+                    <div className='box'></div> Visited
+                  </div>
+                  <div id='greybox'>
+                    <div className='box'></div> Unvisited
+                  </div>
+                </div>
+                <br />
+                <div className='trending'>
+                  <div className='trending-title'>Trending <FaFire/></div>
+                  <hr/>
                   <a href="">California</a>
+                  <br/>
                   <p>Everyone is visiting California right now!</p>
                 </div>
+
+                {/* <div className="trending-content">
+                  <a href="">California</a>
+                  <p>Everyone is visiting California right now!</p>
+                </div> */}
               </div>
             </div>
            
             {/* <PostsIndexContainer posts={posts} maxPosts={1}/> */}
             <div className='bottom'>
+              <h3>Recent Posts</h3>
               <div className= "scroller">
                 <PostsIndexContainer posts={posts} maxPosts={4}/>
               </div>

@@ -62,7 +62,7 @@ class StateShow extends React.Component{
             <div className="state-top">
               {/* change to modal */}
               <div className="state-info">
-                <Link to={`/`}><RiRoadMapFill/> Back to Map </Link>
+                {/* <Link to={`/`}><RiRoadMapFill/> Back to Map </Link> */}
                 <div>
                   <h1>{statesData[res].name}</h1>
                   <p>{statesData[res].description}</p>

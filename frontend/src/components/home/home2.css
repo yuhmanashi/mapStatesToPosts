@@ -7,6 +7,13 @@ font-family: 'Shadows Into Light', cursive;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Quicksand', sans-serif; */
 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&family=Kalam&family=Merriweather&family=Titan+One&display=swap');
+/* font-family: 'Courgette', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Titan One', cursive; */
+
 html, body {
     height: 100%;
     width: 100%;
@@ -61,35 +68,72 @@ html, body {
 }
 
 .placehold {
-    border: 1px solid black;
-    padding: 10px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     background: white;
     color: black;
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 200px;
 }
 
-.placehold > svg {
+.legend {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#greenbox, #greybox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#greenbox {
+    margin-top: 5px;
+}
+
+.box {
+    height: 16px;
+    width: 20px;
+    margin: 5px;
+}
+
+#greenbox .box {
+    background: green;
+}
+
+#greybox .box {
+    background: grey;
+}
+
+.trending {
+    border: 1px solid black;
+    height: 100%;
+}
+
+.trending-title {
+    margin-top: 10px;
+}
+
+.trending-title > svg {
     color: rgb(255, 60, 0);
-}
-
-.placehold > p {
-
 }
 
 /* Map */
 .home-map {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     
     border: 1px solid grey;
     background: rgb(0, 183, 255);
-}
 
-.home-map > p {
-    font-size: min(max(16px, 1.3vw), 22px);
+    min-width: 200px;
 }
 
 .us-state-map {
@@ -97,6 +141,12 @@ html, body {
     max-height: 100%;
     height: auto;
     cursor: pointer;
+}
+
+.home-tag {
+    font-size: min(max(14px, 1.2vw), 18px);
+    font-family: 'Merriweather', serif;
+    margin: 5px;
 }
 
 /* .home_container {
