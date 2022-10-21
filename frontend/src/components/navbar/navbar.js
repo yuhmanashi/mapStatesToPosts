@@ -43,10 +43,18 @@ class NavBar extends React.Component {
   render() {
       return (
         <div className="navbar">
-            <div className="nav-logo">
-                <Link to="/home">mapStatestoPost</Link>
+          <div className="navbar-left">
+                <Link to="/home">        
+                <div className="personal-logo">
+                  <img
+                    src="https://deandingprojects.s3.us-east-2.amazonaws.com/mstp-icon.png"
+                    alt="mstp-logo"
+                  />
+                </div>
+                </Link>
             </div>
             {/* rgba(15,45,48,255) */}
+            <div className="navbar-right">
             <div className='nav-buttons'>
               <div className='create-post' ></div>
               <Button color="inherit" sx={{
@@ -68,6 +76,7 @@ class NavBar extends React.Component {
                   <div id='logout-btn' onClick={this.props.logout}>Logout</div>
                 </ul>
               </div>
+            </div>
             </div>
         </div>
       );

@@ -6,6 +6,8 @@ import './state_show.css';
 import '../posts/posts_index.css'
 import PostsIndexContainer from '../posts/posts_index_container';
 import NavBarContainer from '../navbar/navbar_container';
+import SideBar from "../side_bar/side_bar.jsx";
+
 
 import { MdTravelExplore } from 'react-icons/md'
 import { RiChatSmileFill, RiRoadMapFill} from 'react-icons/ri'
@@ -61,8 +63,9 @@ class StateShow extends React.Component{
           <div className="state-main">
             <div className="state-top">
               {/* change to modal */}
+              <SideBar />
               <div className="state-info">
-                {/* <Link to={`/`}><RiRoadMapFill/> Back to Map </Link> */}
+                <Link to={`/`}><RiRoadMapFill/> Back to Map </Link>
                 <div>
                   <h1>{statesData[res].name}</h1>
                   <p>{statesData[res].description}</p>
