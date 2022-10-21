@@ -22,6 +22,7 @@ font-family: 'Shadows Into Light', cursive; */
 
 .state-top {
   display: flex;
+
 }
 
 .morefiller {
@@ -31,16 +32,18 @@ font-family: 'Shadows Into Light', cursive; */
 .filler {
   border: 1px solid black;
   min-width: 40%;
+  flex: 2;
+
 }
 
 .state-info {
   display: flex;
+  flex: 1;
   flex-direction: column;
   background-color: #6287a2;
   height: 100%;
   padding: 25px;
   border: 2px aliceblue solid;
-  min-width: 60%;
 }
 .state-info h1, h2 {
   font-family: 'Noto Sans', sans-serif;
@@ -49,8 +52,8 @@ font-family: 'Shadows Into Light', cursive; */
 
 .state-info p {
   font-family: 'Raleway', sans-serif;
-  font-weight: 200;
-  color: aliceblue;
+  font-weight: 500;
+  color: black;
   font-size: 18px;
 }
 .state-info a {

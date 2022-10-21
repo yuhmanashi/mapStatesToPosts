@@ -1,5 +1,7 @@
 import React from 'react';
 import './post_create_form.css';
+import { TextField, Button } from "@mui/material";
+
 
 
 class PostCreateForm extends React.Component{
@@ -55,11 +57,6 @@ class PostCreateForm extends React.Component{
               cols="50" />
             <br/>
             <label>State</label>
-            {/* <input 
-              type="text"
-              onChange={this.update('stateName')}
-              value={this.state.stateName}
-             /> */}
             <select
               className="state"
               value={this.state.stateName || ''}
@@ -133,10 +130,17 @@ class PostCreateForm extends React.Component{
              />
 
           <br />
-          <input className="createpostbtn" type="submit" value="Create Post" />
-
+          {/* <input className="createpostbtn" type="submit" value="Create Post" /> */}
+          <Button
+                onClick={(e) => this.handleSubmit(e, true)}
+                variant="contained"
+                sx={{ margin: "0.5em 0",
+                width: 500 }}
+              >
+                Create Post
+              </Button>
              <br />
-          <button className="cancelbtn" onClick={this.props.closeModal}>Cancel</button>
+          <Button className="cancelbtn" onClick={this.props.closeModal}>Cancel</Button>
         </form>
 
       </div>

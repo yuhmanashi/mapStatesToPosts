@@ -9,6 +9,8 @@ import NavBarContainer from '../navbar/navbar_container';
 
 import { MdTravelExplore } from 'react-icons/md'
 import { RiChatSmileFill, RiRoadMapFill} from 'react-icons/ri'
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
 
 import data from '../../data/usa-map-dimensions'
 
@@ -47,7 +49,9 @@ class StateShow extends React.Component{
 
     let posts = this.handlePosts(res)
     let latestPost = posts[0]
-    let latestImageUrl = latestPost.photo.location
+    // let latestImageUrl = posts[0] ? latestPost.photo.location : "https://deandingprojects.s3.us-east-2.amazonaws.com/noimage.jpeg"
+    
+    let itemData = posts[0] ? posts.slice(0 , 9) : [{photo:{location:"https://deandingprojects.s3.us-east-2.amazonaws.com/noimage.jpeg"}}]
     return (
       
       <div className="state-show-wrapper">
@@ -76,8 +80,20 @@ class StateShow extends React.Component{
               </div>
 
               <div className="filler">
-                <h1>Most Recent Photo</h1>
-                <img src={latestImageUrl} alt=""/>
+                <h1>Most Recent Photos</h1>
+                <ImageList sx={{ width: 900, height: 900 }} cols={3} rowHeight={300}>
+                  {itemData.map((item) => (
+                    <ImageListItem key={item.photo.location}>
+                      <img
+                        src={`${item.photo.location}?w=300&h=300&fit=crop&auto=format`}
+                        srcSet={`${item.photo.location}?w=300&h=300&fit=crop&auto=format&dpr=2 2x`}
+                        alt={item.title}
+                        loading="lazy"
+                  />
+        </ImageListItem>
+      ))}
+    </ImageList>
+                {/* <img src={latestImageUrl} alt=""/> */}
               </div>
             </div>
 
