@@ -68,8 +68,6 @@ html, body {
 }
 
 .placehold {
-    border: 1px solid black;
-    padding: 10px;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     background: white;
@@ -81,27 +79,61 @@ html, body {
     max-width: 200px;
 }
 
-.trending-title > svg {
-    color: rgb(255, 60, 0);
+.legend {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-.trending-content {
-    
+#greenbox, #greybox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#greenbox {
+    margin-top: 5px;
+}
+
+.box {
+    height: 16px;
+    width: 20px;
+    margin: 5px;
+}
+
+#greenbox .box {
+    background: green;
+}
+
+#greybox .box {
+    background: grey;
+}
+
+.trending {
+    border: 1px solid black;
+    height: 100%;
+}
+
+.trending-title {
+    margin-top: 10px;
+}
+
+.trending-title > svg {
+    color: rgb(255, 60, 0);
 }
 
 /* Map */
 .home-map {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     
     border: 1px solid grey;
     background: rgb(0, 183, 255);
-}
 
-.home-map > p {
-    font-size: min(max(16px, 1.3vw), 22px);
+    min-width: 200px;
 }
 
 .us-state-map {
@@ -112,7 +144,7 @@ html, body {
 }
 
 .home-tag {
-    font-size: min(max(14px, 1.2vw), 22px);
+    font-size: min(max(14px, 1.2vw), 18px);
     font-family: 'Merriweather', serif;
     margin: 5px;
 }
