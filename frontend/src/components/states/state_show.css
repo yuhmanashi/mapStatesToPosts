@@ -18,6 +18,7 @@ font-family: 'Shadows Into Light', cursive; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 50px;
 }
 
 .state-top {
@@ -52,7 +53,7 @@ font-family: 'Shadows Into Light', cursive; */
 
 .state-info p {
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   color: black;
   font-size: 18px;
 }

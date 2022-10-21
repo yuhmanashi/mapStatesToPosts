@@ -67,8 +67,22 @@ class StateShow extends React.Component{
                 </div>
                 
                 <div className="funfact">
-                  <h2>Fun Fact of {statesData[res].name}</h2>
+                  <h1>Fun Fact of {statesData[res].name}</h1>
                   <p>{statesData[res].funFacts}</p>
+                  <h1>Most Recent Photos</h1>
+                  <ImageList sx={{ width: 600, height: 600 }} cols={2} rowHeight={300}>
+                  {itemData.map((item) => (
+                    <ImageListItem key={item.photo.location}>
+                      <img
+                        src={`${item.photo.location}?w=300&h=300&fit=crop&auto=format`}
+                        srcSet={`${item.photo.location}?w=300&h=300&fit=crop&auto=format&dpr=2 2x`}
+                        alt={item.title}
+                        loading="lazy"
+                    />
+                    </ImageListItem>
+                    ))}
+                    </ImageList>
+                    {/* <img src={latestImageUrl} alt=""/> */}
                   <br />
                   <a href={statesData[res].funFactsUrl} target="_blank"><RiChatSmileFill /> More fun facts!</a>
                   <br />
@@ -80,26 +94,13 @@ class StateShow extends React.Component{
               </div>
 
               <div className="filler">
-                <h1>Most Recent Photos</h1>
-                <ImageList sx={{ width: 900, height: 900 }} cols={3} rowHeight={300}>
-                  {itemData.map((item) => (
-                    <ImageListItem key={item.photo.location}>
-                      <img
-                        src={`${item.photo.location}?w=300&h=300&fit=crop&auto=format`}
-                        srcSet={`${item.photo.location}?w=300&h=300&fit=crop&auto=format&dpr=2 2x`}
-                        alt={item.title}
-                        loading="lazy"
-                  />
-        </ImageListItem>
-      ))}
-    </ImageList>
-                {/* <img src={latestImageUrl} alt=""/> */}
+                <div className='state-posts'>
+                  <PostsIndexContainer posts={this.handlePosts(res)}/>
+                </div>  
               </div>
             </div>
 
-            <div className='state-posts'>
-              <PostsIndexContainer posts={this.handlePosts(res)}/>
-            </div>  
+
           </div>
       </div>
     )
