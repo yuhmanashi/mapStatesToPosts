@@ -46,11 +46,8 @@ class UserShow extends React.Component {
         <header className='navbar'>
           <NavBarContainer />
         </header>
- 
           <div className="user_details">
             <h1 className="user_name">{this.handleUser()}'s Page</h1>
-        
-
             <div className='user_posts'>
                 <PostsIndexContainer posts={this.handlePosts()}/>
             </div>

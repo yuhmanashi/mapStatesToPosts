@@ -1,5 +1,7 @@
 import React from 'react';
 import './post_create_form.css';
+import { TextField, Button } from "@mui/material";
+
 
 class EditCommentForm extends React.Component {
     constructor(props) {
@@ -123,9 +125,19 @@ class EditCommentForm extends React.Component {
                   // value={this.state.photo} 
                  /> */}
               <br />
-              <input className="createpostbtn" type="submit" value="Edit Post" />
+              {/* <input className="createpostbtn" type="submit" value="Edit Post" />
               <br />
-              <button className="cancelbtn" onClick={this.props.closeModal}>Cancel</button>
+              <button className="cancelbtn" onClick={this.props.closeModal}>Cancel</button> */}
+              <Button
+                onClick={(e) => this.handleSubmit(e, true)}
+                variant="contained"
+                sx={{ margin: "0.5em 0",
+                width: 450 }}
+              >
+                Edit Post
+              </Button>
+             <br />
+          <Button className="cancelbtn" onClick={this.props.closeModal}>Cancel</Button>
             </form>
     
           </div>

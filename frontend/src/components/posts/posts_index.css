@@ -30,7 +30,6 @@ font-family: 'Titan One', cursive; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
   max-height: 800px;
 }
 

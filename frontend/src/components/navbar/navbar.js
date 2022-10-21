@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import './navbar.css'
 import { FaGithub, FaRegUserCircle, FaLinkedin } from 'react-icons/fa'
+import Button from '@mui/material/Button';
 
 
 class NavBar extends React.Component {
@@ -45,10 +46,17 @@ class NavBar extends React.Component {
             <div className="nav-logo">
                 <Link to="/home">mapStatestoPost</Link>
             </div>
-            
+            {/* rgba(15,45,48,255) */}
             <div className='nav-buttons'>
-              <div className='create-post' onClick={this.createPostModal}>Create Post</div>
-
+              <div className='create-post' ></div>
+              <Button color="inherit" sx={{
+                  backgroundColor: 'rgba(15,45,48,255)',
+                  color: 'white',
+                  '&:hover': {
+                    backgroundColor:'rgb(68,180,204)',
+                    color: 'rgba(15,45,48,255)'
+                  }
+                }} onClick={this.createPostModal}>Create Post</Button>
               <div className='user-icon'>
                 <FaRegUserCircle />
                 <ul className="user-dropdown">

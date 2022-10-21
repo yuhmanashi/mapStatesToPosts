@@ -11,7 +11,6 @@ import { AiFillFire, FaFire, ImFire, RiFireFill, MdLocalFireDepart } from 'react
 class HomePage extends Component {  
   mapHandler = (event) => {
     const stateName = event.target.dataset.name
-    const stateStyle = event.target.style
     this.props.USAStates.forEach(USAState => {
 
       if (stateName === USAState.name) {
