@@ -55,49 +55,37 @@ class HomePage extends Component {
     return (
       <div className="home">
         <NavBarContainer />
-
+        <SideBar />
         <main className="main">
           <div className="content">
-          <SideBar />
-
-
-            <div className="top">
+            
               <div className="home-map">
-              <div className='trend-legend'>
+                <div className='trend-legend'>
                   <div className='trending'>
-                  
-                  <Button className='trending-title'>Trending States <FaFire/></Button>
+                    <Button className='trending-title'>Trending States <FaFire/></Button>
                     <hr/>
-                  <Trendings/>           
-                <br/>
-                    
+                    <Trendings/>           
+                    <br/>
                   </div>
-              <div className='legend'>
-                  <div>Legend</div>
-                  <div id='greenbox'>
-                    <div className='box'></div> Visited
-                  </div>
-                  <div id='greybox'>
-                    <div className='box'></div> Unvisited
+                  <div className='legend'>
+                    <div>Legend</div>
+                    <div id='greenbox'>
+                      <div className='box'></div> Visited
+                    </div>
+                    <div id='greybox'>
+                      <div className='box'></div> Unvisited
+                    </div>
                   </div>
                 </div>
-              </div>
+                <br/>
                 <USAMap title='' customize={this.statesFilling()} onClick={this.mapHandler} />
                 <div className='home-tag'>Click on a state to view the state's page!</div>
                 
               </div>
 
-              <div className="placehold">
               <div className= "scroller">
-                <PostsIndexContainer posts={posts} maxPosts={16}/>
+                <PostsIndexContainer posts={posts} maxPosts={5}/>
               </div>
-                <br />
-              
-
-              </div>
-            </div>
-
-
           </div>
         </main>
 

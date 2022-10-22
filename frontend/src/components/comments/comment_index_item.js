@@ -10,6 +10,7 @@ class CommentIndexItem extends React.Component {
         this.handleDeleteComment = this.handleDeleteComment.bind(this);
         this.handleAuthor = this.handleAuthor.bind(this);
         this.openModal = this.openModal.bind(this);
+        this.handleButtons = this.handleButtons.bind(this);
     }
 
     handleDeleteComment() {
@@ -34,6 +35,20 @@ class CommentIndexItem extends React.Component {
         return username;
     }
 
+    handleButtons() {
+        const { comment, userId } = this.props
+        if (comment.author === userId){
+            return(
+                <div className="comment-button">
+                    <div className="comment-delete" onClick={this.handleDeleteComment}><TiDelete /></div>
+                    <div className="comment-edit" onClick={this.openModal}><TiEdit /></div>
+                </div>
+            )
+        }
+
+        return <div></div>
+    }
+
     openModal(){
         if (this.props.userId === this.props.comment.author) {
             this.props.giveCommentId(this.props.comment._id);
@@ -56,10 +71,7 @@ class CommentIndexItem extends React.Component {
                         {this.props.comment.body}
                     </div>
                 </div>
-                <div className="comment-button">
-                    <div className="comment-delete" onClick={this.handleDeleteComment}><TiDelete /></div>
-                    <div className="comment-edit" onClick={this.openModal}><TiEdit /></div>
-                </div>
+                {this.handleButtons()}
             </div>
         )
     }

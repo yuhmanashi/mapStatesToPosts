@@ -31,6 +31,7 @@ font-family: 'Titan One', cursive; */
 
 .create-comment{
     font-family: 'Kalam', cursive;
+    width: 100%;
 }
 
 .edit-comment-form {

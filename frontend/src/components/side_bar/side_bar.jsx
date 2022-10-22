@@ -11,7 +11,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-
+import './sidebar.css'
 
 const drawerWidth = 240;
 
@@ -21,13 +21,13 @@ export default function SideBar() {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
+      {/* <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
         <Toolbar>
           <Typography variant="h6" noWrap component="div">
             Clipped drawer
           </Typography>
         </Toolbar>
-      </AppBar>
+      </AppBar> */}
       <Drawer
         variant="permanent"
         sx={{
@@ -36,8 +36,8 @@ export default function SideBar() {
           [`& .MuiDrawer-paper`]: { width: drawerWidth, boxSizing: 'border-box' },
         }}
       >
-        <Toolbar />
-        <Box sx={{ overflow: 'auto' }}>
+        {/* <Toolbar /> */}
+        <Box className='sidebar' sx={{ overflow: 'auto' }}>
           <List>
             {['Create Post'].map((text, index) => (
               <ListItem key={text} disablePadding>

@@ -22,8 +22,8 @@ ul.comment-container {
   border: none;
   padding: 10px;
   /* border-radius: 10px; */
-  display: flex;
-  max-height: 12%;
+  /* display: flex; */
+  /* max-height: 12%; */
   /* overflow-y: auto; */
 }
 

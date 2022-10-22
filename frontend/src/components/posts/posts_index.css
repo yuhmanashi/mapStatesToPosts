@@ -30,7 +30,7 @@ font-family: 'Titan One', cursive; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-height: 800px;
+  /* max-height: 800px; */
 }
 
 .post {
@@ -40,7 +40,7 @@ font-family: 'Titan One', cursive; */
   padding: 10px;
   
   max-width: 300px;
-  max-height: 700px;
+  /* max-height: 700px; */
   box-shadow: 1px 3px 3px .6px rgb(211, 211, 211), -1px 2px 5px .6px rgb(199, 199, 199); 
 
   display: flex;
@@ -128,6 +128,8 @@ font-family: 'Titan One', cursive; */
 }
 
 .post-bottom {
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   padding-bottom: 0;
 }

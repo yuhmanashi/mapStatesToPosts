@@ -26,40 +26,22 @@ html, body {
     border: 1px solid white;
     margin: 0;
 }
-hr{
+
+hr {
     border: 1px solid white;
     margin: 0;
 }
+
 .main {
-    /* margin-top: 100px; */
+    margin-top: 100px;
     margin-left: 250px;
 }
 
 /* Content */
 .content {    
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 95vh;
-}
-
-/* .content > * {
-    padding: 25px;
-    margin: 25px;
-} */
-
-.top {
-    width: 100%;
-    display: flex;
-    justify-content: ;
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* border: 1px solid blue; */
-}
-
-.top > * {
-    margin: 20px;
 }
 
 .home {
@@ -69,7 +51,7 @@ hr{
     width: 100%;
 }
 
-.placehold {
+/* .placehold {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     background: white;
@@ -79,19 +61,22 @@ hr{
     flex-direction: column;
 
     width: 50%;
-}
+} */
 
 .legend {
     display: flex;
     flex-direction: column;
-    width:100px;
-    margin-left: 150px;
+    max-width: 120px;
+
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
 }
 
 #greenbox, #greybox {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 #greenbox {
@@ -116,14 +101,13 @@ hr{
     background-color: white;
 }
 
-.trending-title {
-    margin-top: 10px;
-    
-}
 .trend-legend {
     display: flex;
-    flex-direction: row;    
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
 }
+
 .trending-title > svg {
     color: rgb(255, 60, 0);
 }
@@ -153,18 +137,7 @@ hr{
     margin: 5px;
 }
 
-/* .home_container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-} */
-
-
 /* Posts Container */
-.bottom {
-    width: 1000px;
-}
 
 .scroller {
     /* display: flex;
@@ -174,7 +147,8 @@ hr{
     padding: 25px;
     margin: 20px;
 
-    height: 1080px;
+    width: 40%;
+    height: 80%;
     overflow-y: auto;
 
     /* background-color: aquamarine; */

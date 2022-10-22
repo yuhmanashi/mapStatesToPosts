@@ -5,6 +5,8 @@ import PostsIndexContainer from '../posts/posts_index_container';
 import NavBarContainer from '../navbar/navbar_container';
 import './user_show.css';
 
+import SideBar from "../side_bar/side_bar.jsx";
+
 
 class UserShow extends React.Component {
   constructor(props) {
@@ -37,23 +39,18 @@ class UserShow extends React.Component {
     return username;
   }
 
-
-
-
   render() {
     return (
-      <div className="user_show_container">
-        <header className='navbar'>
-          <NavBarContainer />
-        </header>
+      <div className="user-show-container">
+        <NavBarContainer />
+        {/* <SideBar /> */}
+        
           <div className="user_details">
-            <h1 className="user_name">{this.handleUser()}'s Page</h1>
+            <h1 className="user_name">{this.handleUser()}'s Posts</h1>
             <div className='user_posts'>
-                <PostsIndexContainer posts={this.handlePosts()}/>
+              <PostsIndexContainer posts={this.handlePosts()}/>
             </div>
-
-            
-        </div>
+          </div>
         
       </div>
     )

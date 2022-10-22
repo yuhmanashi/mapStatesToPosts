@@ -1,14 +1,45 @@
-.user_name{
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Leckerli+One&family=Noto+Sans&family=Raleway:wght@100&family=Roboto:ital,wght@1,300&family=Shadows+Into+Light&display=swap');
+/* font-family: 'Fredoka', sans-serif;
+font-family: 'Leckerli One', cursive;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Shadows Into Light', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&family=Kalam&family=Merriweather&family=Titan+One&display=swap');
+/* font-family: 'Courgette', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Titan One', cursive; */
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.user-show-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.user_details {
+    margin-top: 100px;
+    /* margin-left: 240px; */
+}
+
+.user_name {
     display: grid;
     justify-content: center;
     font-size: 48px;
-    font-family: 'Roboto';
-    padding-top: 50px;
+    font-family: 'Courgette', cursive;
+    padding-top: 30px;
 }
 
 .user_posts{
-    display: flex;
-    justify-content: center;
-
+    /* display: flex;
+    justify-content: center; */
 }
 

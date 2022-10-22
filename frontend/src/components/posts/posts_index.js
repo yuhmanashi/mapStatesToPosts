@@ -31,7 +31,7 @@ class PostsIndex extends React.Component {
       )});
     return (
       <ResponsiveMasonry
-        columnsCountBreakPoints={{600: 1, 900: 2, 1200: 3}}
+        columnsCountBreakPoints={{400: 1, 500: 2, 800: 3, 1100: 4, 1500: 5}}
       >
         <Masonry className='mason'>
           {postShow}

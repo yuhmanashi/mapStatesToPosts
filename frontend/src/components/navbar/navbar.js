@@ -44,27 +44,30 @@ class NavBar extends React.Component {
       return (
         <div className="navbar">
           <div className="navbar-left">
-                <Link to="/home">        
-                <div className="personal-logo">
-                  <img
-                    src="https://deandingprojects.s3.us-east-2.amazonaws.com/mstp-icon.png"
-                    alt="mstp-logo"
-                  />
-                </div>
-                </Link>
-            </div>
-            {/* rgba(15,45,48,255) */}
-            <div className="navbar-right">
+            <Link to="/home">        
+              <div className="personal-logo">
+                <img
+                  src="https://deandingprojects.s3.us-east-2.amazonaws.com/mstp-icon.png"
+                  alt="mstp-logo"
+                />
+              </div>
+            </Link>
+          </div>
+            
+          <div className="navbar-right">
             <div className='nav-buttons'>
-              <div className='create-post' ></div>
               <Button color="inherit" sx={{
+                  margin: '10px',
                   backgroundColor: 'rgba(15,45,48,255)',
                   color: 'white',
                   '&:hover': {
                     backgroundColor:'rgb(68,180,204)',
                     color: 'rgba(15,45,48,255)'
                   }
-                }} onClick={this.createPostModal}>Create Post</Button>
+                }} onClick={this.createPostModal}>
+                Create Post
+              </Button>
+              
               <div className='user-icon'>
                 <FaRegUserCircle />
                 <ul className="user-dropdown">
@@ -77,7 +80,7 @@ class NavBar extends React.Component {
                 </ul>
               </div>
             </div>
-            </div>
+          </div>
         </div>
       );
   }
