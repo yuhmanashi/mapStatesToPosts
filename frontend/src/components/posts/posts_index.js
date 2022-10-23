@@ -11,7 +11,7 @@ class PostsIndex extends React.Component {
   }
 
   render() {
-    const { maxPosts, posts, comments, users, deletePost, openModal, givePostId, userId } = this.props;
+    const { page, maxPosts, posts, comments, users, deletePost, openModal, givePostId, userId } = this.props;
     if (!posts) return null;
     
     const totalPosts = posts.length;
@@ -29,6 +29,11 @@ class PostsIndex extends React.Component {
           key={post._id}
         />
       )});
+    
+    if (page === 'home'){
+      return <div className='home-posts'>{postShow}</div>
+    }
+
     return (
       <ResponsiveMasonry
         columnsCountBreakPoints={{400: 1, 500: 2, 800: 3, 1100: 4, 1500: 5}}

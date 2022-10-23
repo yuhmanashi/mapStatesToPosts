@@ -19,7 +19,6 @@ html, body {
     width: 100%;
     padding: 0;
     margin: 0;
-    
 }
 
 .hr-top, .hr-bottom {
@@ -51,18 +50,7 @@ hr {
     width: 100%;
 }
 
-/* .placehold {
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    background: white;
-    color: black;
-
-    display: flex;
-    flex-direction: column;
-
-    width: 50%;
-} */
-
+/* Map Legend */
 .legend {
     display: flex;
     flex-direction: column;
@@ -71,6 +59,10 @@ hr {
     border: 1px solid black;
     text-align: center;
     padding: 5px;
+}
+
+.legend > * {
+    font-family: 'Kalam', cursive;
 }
 
 #greenbox, #greybox {
@@ -97,6 +89,7 @@ hr {
     background: grey;
 }
 
+/* Trending */
 .trending {
     background-color: white;
 }
@@ -138,18 +131,25 @@ hr {
 }
 
 /* Posts Container */
+.scroller-title {
+    font-size: min(max(18px, 2vw), 24px);
+    font-family: 'Courgette', cursive;;
+}
 
 .scroller {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-
-    padding: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin: 20px;
 
     width: 40%;
-    height: 80%;
-    overflow-y: auto;
+    max-height: 800px;
+}
 
-    /* background-color: aquamarine; */
+.home-posts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    overflow-y: auto;
 }

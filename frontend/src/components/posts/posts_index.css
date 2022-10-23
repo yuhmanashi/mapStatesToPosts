@@ -14,16 +14,6 @@ font-family: 'Merriweather', serif;
 font-family: 'Titan One', cursive; */
 
 /* Post Container */
-/* .post-container {
-  margin-top: 0;
-  padding: 0;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(3, minmax(345px, 1fr));
-  width: 20%;
-  height: 40%;
-} */
-
 .post-container {
   margin-top: 0;
   padding: 0;

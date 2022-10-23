@@ -84,7 +84,8 @@ class HomePage extends Component {
               </div>
 
               <div className= "scroller">
-                <PostsIndexContainer posts={posts} maxPosts={5}/>
+                <div className='scroller-title'>Recent Posts</div>
+                <PostsIndexContainer posts={posts} maxPosts={5} page={'home'}/>
               </div>
           </div>
         </main>
