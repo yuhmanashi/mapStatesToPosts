@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Lobster&display=swap');
-/* font-family: 'Leckerli One', cursive; greeting header 
-font-family: 'Lobster', cursive; words
-font-family: 'Mali', cursive;
-*/ 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&family=Kalam&family=Merriweather&family=Titan+One&display=swap');
+/* font-family: 'Courgette', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Titan One', cursive; */
 
 .about-us-modal-child {
     display: flex;
@@ -18,7 +19,10 @@ font-family: 'Mali', cursive;
 
     box-shadow: 1px 1px 10px rgb(180, 180, 180);
 
-    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-us {
@@ -27,7 +31,7 @@ font-family: 'Mali', cursive;
     display: flex;
 }
 
-.about-us ul {
+.about-us > ul {
     font-size: 18px;
     background: white;
     border: 1px solid white;
@@ -43,7 +47,11 @@ font-family: 'Mali', cursive;
     flex-direction: column;
     align-items: center;
 }
- 
+
+.about-us h4 {
+    font-family: 'Kalam', cursive;
+}
+
 .about-us ul > * {
     margin: 5px;
 }
@@ -66,22 +74,13 @@ font-family: 'Mali', cursive;
     cursor: pointer;
 }
 
-/* .links {
+.links {
     display: flex;
     flex-direction: row;
-} */
-
-.selfie {
-    border-radius: 50px;
 }
 
 .selfie img {
     border-radius: 100px;
     height: 120px;
     width: 120px;
-}
-
-.project-repo {
-    display: flex;
-    flex-direction: column;
 }
