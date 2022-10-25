@@ -7,6 +7,19 @@ export default class AboutUs extends React.Component {
         return (
             <div className="about-us-container">
                 <div className="about-us">
+                <ul className='project-repo'>
+                    <div className='selfie'>
+                            <img src={require('./pics/mstep.png')}></img>
+                        </div>
+                    <h4>Project Repo</h4>
+                        <ul className='links'>
+                            <li>
+                                <a href="https://github.com/yuhmanashi/mapStatesToPosts" target="_blank">
+                                    <FaGithub />
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
                     <ul className='yao-xu'>
                         <div className='selfie'>
                             <img src={require('./pics/yao.png')}></img>
@@ -21,11 +34,6 @@ export default class AboutUs extends React.Component {
                             <li>
                                 <a href="https://www.linkedin.com/in/yaoxu03/" target="_blank">
                                     <FaLinkedin />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank">
-                                    <FaAngellist />
                                 </a>
                             </li>
                         </ul>
@@ -47,11 +55,7 @@ export default class AboutUs extends React.Component {
                                     <FaLinkedin />
                                 </a>
                             </li>
-                            <li>
-                                <a href="" target="_blank">
-                                    <FaAngellist />
-                                </a>
-                             </li>
+
                         </ul>
                         
                     </ul>
@@ -73,11 +77,7 @@ export default class AboutUs extends React.Component {
                                     <FaLinkedin />
                                 </a>
                             </li>
-                            <li>
-                                <a href="" target="_blank">
-                                    <FaAngellist />
-                                </a>
-                            </li>
+
                         </ul>
                     </ul>
 
@@ -98,11 +98,7 @@ export default class AboutUs extends React.Component {
                                     <FaLinkedin />
                                 </a>
                             </li>
-                            <li>
-                                <a href="" target="_blank">
-                                    <FaAngellist />
-                                </a>
-                            </li>
+
                         </ul>
                     </ul>
 

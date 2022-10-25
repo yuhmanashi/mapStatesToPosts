@@ -80,3 +80,8 @@ font-family: 'Mali', cursive;
     height: 120px;
     width: 120px;
 }
+
+.project-repo {
+    display: flex;
+    flex-direction: column;
+}
