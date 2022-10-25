@@ -308,7 +308,7 @@
     z-index: 13;
     min-height: 300px;
     min-width: 475px;
-    margin-left: 150px;
+    // margin-left: 150px;
     background-color: rgb(17, 29, 31);
     transform: rotateX(0deg) rotateY(12deg) rotateZ(0deg) skew(0deg,0.5deg) translate(10px, 26px) scale(58.8%);
 }
@@ -408,3 +408,7 @@
     margin-bottom: 5px;
 
 }
+
+.video-demo-instructions {
+    margin-right: 150px;
+    }

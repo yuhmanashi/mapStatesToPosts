@@ -57,6 +57,7 @@ class NavBar extends React.Component {
           <div className="navbar-right">
             <div className='nav-buttons'>
               <Button color="inherit" sx={{
+                width: '200px',
                   margin: '10px',
                   backgroundColor: 'rgba(15,45,48,255)',
                   color: 'white',

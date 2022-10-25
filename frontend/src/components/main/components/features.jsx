@@ -1,18 +1,15 @@
 import React, { useRef, useState, useEffect } from "react";
 import "../stylesheets/features.scss";
-import FeaturesWindowBackground from "./svgs/features-window-background.jsx";
-import FeaturesWindowButtons from "./svgs/features-window-buttons.jsx";
-import FeaturesWindowFrame from "./svgs/features-window-frame.jsx";
-import FeaturesWindowFrameBack from "./svgs/features-window-frame-back.jsx";
+
 
 function Features() {
   const [currentVideo, setCurrentVideo] = useState("default");
 
   const videos = {
-    default: "https://deandingprojects.s3.us-east-2.amazonaws.com/default.mp4",
-    explore: "https://deandingprojects.s3.us-east-2.amazonaws.com/default.mp4",
-    create: "https://deandingprojects.s3.us-east-2.amazonaws.com/default.mp4",
-    interact: "https://deandingprojects.s3.us-east-2.amazonaws.com/default.mp4",
+    default: "https://deandingprojects.s3.us-east-2.amazonaws.com/default.mov",
+    explore: "https://deandingprojects.s3.us-east-2.amazonaws.com/Feature1.mov",
+    create: "https://deandingprojects.s3.us-east-2.amazonaws.com/Feature2.mov",
+    interact: "https://deandingprojects.s3.us-east-2.amazonaws.com/Feature3.mov",
   };
 
   return (
@@ -34,27 +31,12 @@ function Features() {
                   loop
                   muted
                   preload="auto | metadata | none"
-                  poster="https://tomleslieli-portfolio.s3.amazonaws.com/placeholder.png"
+                  // poster="https://tomleslieli-portfolio.s3.amazonaws.com/placeholder.png"
                 >
                   <source src={videos[currentVideo]} type="video/mp4" />
                 </video>
               </div>
-              <div className="features-window" id="features-window-background">
-                <FeaturesWindowBackground />
-              </div>
-              <div className="features-window" id="features-window-frame-back">
-                <FeaturesWindowFrameBack />
-              </div>
-              <div className="features-window" id="features-window-frame">
-                <FeaturesWindowFrame />
-              </div>
-              <div
-                onClick={() => setCurrentVideo("rick")}
-                className="features-window"
-                id="features-window-button"
-              >
-                <FeaturesWindowButtons />
-              </div>
+
             </div>
             <div className="video-demo-instructions">
               {currentVideo === "default" ? (
@@ -95,7 +77,7 @@ function Features() {
             <div className="feature-info">
               <h3 onClick={() => setCurrentVideo("create")}>Create Posts & Photos</h3>
               <p>
-                You can create a post and upload any photos you've taken during visit. Other users can comment and react to your travel.
+                You can create a post and upload any photos you've taken during visit. Other users can comment and react to your travel. The states that you visited will be "Green-lit" on your personalized map!
               </p>
             </div>
           </div>

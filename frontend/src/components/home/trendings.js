@@ -55,7 +55,7 @@ export default function Trendings() {
                           color: 'rgba(15,45,48,255)'
                         }
                       }}> 
-                      Hawaii
+                      Alaska
                       </Button>
                     </Link>
 
