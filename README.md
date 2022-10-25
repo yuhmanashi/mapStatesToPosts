@@ -4,11 +4,11 @@ mapStatesToPost is an original web app where users can upload a post (photo and 
 
 Inspired by the fact that people like to share about all the countries they have visited, we wondered how many U.S. states people have visited.  mapStatesToPost gives users the opportunity to share a visual scrapbook of all of those destinations. 
 
-Try it live [here!](https://mapstatestopost.herokuapp.com/#/)
+Try it live [here!](https://mapstatestoposts.herokuapp.com/#/)
 
 (click `Demo User` for quick access)
 
-![splash](./frontend/public/mstpthumb.png)
+![splash](./frontend/public/splash.png)
 
 ## Technologies, Libraries, APIs
 
@@ -21,12 +21,14 @@ Try it live [here!](https://mapstatestopost.herokuapp.com/#/)
 - CSS to style components rendered on the browser
 - React-icons library for icons
 - SVG for map rendering
+- MUI library for design components
+- Masonry for posts layout design
 - AWS Simple Storage Service (S3) for uploading and hosting photos 
 - Heroku to host the live site
 
 ## Features
 
-With mapStatesToPost users can:
+With mapStatesToPosts users can:
 
 - Signup / Signin to an account
 - View a personalized map where each state they have visited and uploaded a post/photo for is highlighted
@@ -37,9 +39,7 @@ With mapStatesToPost users can:
 
 ## Coding Challenges
 
-CHALLENGE: We took on the task of having a U.S. map that has highlighted states unique to each user.  Every state is by default not highlighted, and we originally only had one map, not one per user.  As demonstrated below, a user can create a post with a photo and once that is complete the state turns red to show that the user has been there, and their post also appears at the top of the posts on the main page. 
-
-![splash](./frontend/public/mstpgif.gif)
+CHALLENGE: We took on the task of having a U.S. map that has highlighted states unique to each user.  Every state is by default not highlighted, and we originally only had one map, not one per user.  A user can create a post with a photo and once that is complete the state turns red to show that the user has been there, and their post also appears at the top of the posts on the main page.
 
 SOLUTION: We begin by fetching all posts from the current user.  Next we map over those posts and extract the name of the state from each post, pushing the state name into an array variable, `states`.  However, we need an object rather than an array. We use `reduce` on the array of `states`, passing in `{}` as accumulator. We then iterate over the `states` array and key each state to `{fill: 'color'}`, get the object as `state : {fill: 'color'}` and return it to get the highlighted states for that user.
 
