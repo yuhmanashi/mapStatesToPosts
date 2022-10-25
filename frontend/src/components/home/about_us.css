@@ -66,9 +66,10 @@ font-family: 'Mali', cursive;
     cursor: pointer;
 }
 
-.links {
+/* .links {
     display: flex;
-}
+    flex-direction: row;
+} */
 
 .selfie {
     border-radius: 50px;
