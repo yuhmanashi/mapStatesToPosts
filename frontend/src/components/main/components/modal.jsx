@@ -6,9 +6,6 @@ import { TextField, Button } from "@mui/material";
 import LoginFormContainer from '../../session/login_form_container';
 import SignUpForm1Container from '../../session/signup_form_container';
 
-
-
-
 const style = {
   position: 'absolute',
   top: '50%',
@@ -49,7 +46,7 @@ function ChildModal() {
         <Box sx={{ ...style, width: 400 }}>
           <h2 id="child-modal-title">Sign up Form</h2>
           <p id="child-modal-description">
-            <SignUpForm1Container/>
+            <SignUpForm1Container handleClose={handleClose}/>
           </p>
           <Button onClick={handleClose}>Return to Log in</Button>
         </Box>

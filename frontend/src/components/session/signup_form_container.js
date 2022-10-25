@@ -3,10 +3,10 @@ import { signup, login, removeErrors } from '../../actions/session_actions';
 import { closeModal, openModal } from '../../actions/modal_actions';
 import SignupForm from './signup_form';
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, props) => {
   return {
     signedIn: state.session.isSignedIn,
-    errors: state.errors.session
+    errors: state.errors.session,
   };
 };
 

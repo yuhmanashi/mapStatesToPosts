@@ -62,7 +62,7 @@ class SignupForm extends React.Component {
 
   handleCloseModal(){
     if (this.props.signedIn) {
-      this.props.closeModal();
+      this.props.handleClose();
     }
   }
 
@@ -84,6 +84,7 @@ class SignupForm extends React.Component {
   }
 
   render() {
+    console.log(this.props);
     return (
       <div className="signup-formbox">
         <div className="signup-header">
