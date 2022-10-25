@@ -18,7 +18,6 @@ class HomePage extends Component {
         this.props.history.push(`/USAStates/${USAState._id}`);
       }
     })
-    
   };
 
   statesFilling = () => {
@@ -85,7 +84,7 @@ class HomePage extends Component {
 
               <div className= "scroller">
                 <div className='scroller-title'>Recent Posts</div>
-                <PostsIndexContainer posts={posts} maxPosts={5} page={'home'}/>
+                <PostsIndexContainer posts={posts} maxPosts={8} page={'home'}/>
               </div>
           </div>
         </main>

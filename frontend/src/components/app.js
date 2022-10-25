@@ -34,7 +34,6 @@ const theme = createTheme({
 
 const App = () => (
   <ThemeProvider theme={theme}>
-  <div>
     <ModalContainer />
     <Switch>
         <AuthRoute exact path="/" component={MainPageContainer} />
@@ -42,7 +41,6 @@ const App = () => (
         <ProtectedRoute exact path="/users/:userId" component={UserShowContainer}/>
         <ProtectedRoute exact path="/USAStates/:id" component={StateShowContainer} />
     </Switch>
-  </div>
   </ThemeProvider>
 );
 
