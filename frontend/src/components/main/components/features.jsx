@@ -31,7 +31,6 @@ function Features() {
                   loop
                   muted
                   preload="auto | metadata | none"
-                  // poster="https://tomleslieli-portfolio.s3.amazonaws.com/placeholder.png"
                 >
                   <source src={videos[currentVideo]} type="video/mp4" />
                 </video>

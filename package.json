@@ -1,5 +1,5 @@
 {
-  "name": "mapstatestopost",
+  "name": "mapstatestoposts",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KayiLeung/mapStatesToPost.git"
+    "url": "git+hhttps://github.com/yuhmanashi/mapStatesToPosts.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KayiLeung/mapStatesToPost/issues"
+    "url": "https://github.com/yuhmanashi/mapStatesToPosts/issues"
   },
-  "homepage": "https://github.com/KayiLeung/mapStatesToPost#readme",
+  "homepage": "https://github.com/yuhmanashi/mapStatesToPosts#readme",
   "dependencies": {
     "@fontsource/roboto": "^4.5.8",
     "@material-ui/core": "^4.12.4",

@@ -1,8 +1,8 @@
 ## Description
 
-mapStatesToPost is an original web app where users can upload a post (photo and caption) from every U.S. state they have visited, and view and comment on other user's posts.  The title is an insider developer's nod to the react-redux function `mapStateToProps`.
+mapStatesToPosts is an original web app where users can upload a post (photo and caption) from every U.S. state they have visited, and view and comment on other user's posts.  The title is an insider developer's nod to the react-redux function `mapStateToProps`.
 
-Inspired by the fact that people like to share about all the countries they have visited, we wondered how many U.S. states people have visited.  mapStatesToPost gives users the opportunity to share a visual scrapbook of all of those destinations. 
+Inspired by the fact that people like to share about all the countries they have visited, we wondered how many U.S. states people have visited.  mapStatesToPosts gives users the opportunity to share a visual scrapbook of all of those destinations. 
 
 Try it live [here!](https://mapstatestoposts.herokuapp.com/#/)
 

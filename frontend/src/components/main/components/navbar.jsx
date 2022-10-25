@@ -13,21 +13,21 @@ function NavBar() {
       </div>
 
       <div className="navbar-right">
-        <a href="https://linkedin.com/in//" target="_blank">
-          <button className="nav-button">
+        <a href="https://linkedin.com/in/deanding/" target="_blank">
+          {/* <button className="nav-button">
             <div className="button-logo">
               <img
-                src="https://tomleslieli-portfolio.s3.amazonaws.com/linkedin-logo.png"
+                src="https://deandingprojects.s3.us-east-2.amazonaws.com/linkedin-logo.png"
                 alt="linkedin-logo"
               />
             </div>
-          </button>
+          </button> */}
         </a>
         <a href="https://github.com/yuhmanashi/mapStatesToPosts" target="_blank">
           <button className="nav-button">
             <div className="button-logo">
               <img
-                src="https://tomleslieli-portfolio.s3.amazonaws.com/github-logo.png"
+                src="https://deandingprojects.s3.us-east-2.amazonaws.com/github-logo.png"
                 alt="github-logo"
               />
             </div>
