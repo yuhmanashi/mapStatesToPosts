@@ -18,25 +18,17 @@ font-family: 'Mali', cursive;
 
     box-shadow: 1px 1px 10px rgb(180, 180, 180);
 
-    font-family: 'Roboto', ;
-}
-
-.about-us-container > hr {
-    margin: 0;
+    font-family: 'Roboto';
 }
 
 .about-us {
     padding: 10px;
 
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    flex-wrap: wrap;
 }
 
 .about-us ul {
-    font-size: 20px;
+    font-size: 18px;
     background: white;
     border: 1px solid white;
     border-radius: 5px;
@@ -46,8 +38,9 @@ font-family: 'Mali', cursive;
     margin: 5px;
 
     list-style: none;
-
+    
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
  
@@ -71,4 +64,18 @@ font-family: 'Mali', cursive;
 
 .about-us a:hover {
     cursor: pointer;
+}
+
+.links {
+    display: flex;
+}
+
+.selfie {
+    border-radius: 50px;
+}
+
+.selfie img {
+    border-radius: 100px;
+    height: 120px;
+    width: 120px;
 }
