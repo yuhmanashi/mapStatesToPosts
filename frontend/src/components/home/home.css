@@ -99,6 +99,10 @@ hr {
     background-color: white;
 }
 
+.legend {
+    font-size: min(max(12px, 1vw), 16px);
+}
+
 .trend-legend {
     display: flex;
     justify-content: space-between;
@@ -108,6 +112,8 @@ hr {
 
 .trending-title > svg {
     color: rgb(255, 60, 0);
+    margin-bottom: 2px;
+    margin-left: 4px;
 }
 
 /* Map */
@@ -131,7 +137,7 @@ hr {
 
 .home-tag {
     font-size: min(max(14px, 1.2vw), 18px);
-    font-family: 'Merriweather', serif;
+    font-family: 'Courgette', cursive;
     margin: 5px;
 }
 

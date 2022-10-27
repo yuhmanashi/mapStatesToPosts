@@ -57,10 +57,11 @@ class NavBar extends React.Component {
           <div className="navbar-right">
             <div className='nav-buttons'>
               <Button color="inherit" sx={{
-                width: '200px',
+                // width: '140px',
                   margin: '10px',
                   backgroundColor: 'rgba(15,45,48,255)',
                   color: 'white',
+                  fontSize: 'min(max(10px, 2vw), 14px)',
                   '&:hover': {
                     backgroundColor:'rgb(68,180,204)',
                     color: 'rgba(15,45,48,255)'

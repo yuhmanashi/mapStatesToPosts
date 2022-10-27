@@ -22,8 +22,8 @@ class UserShow extends React.Component {
   }
 
   handlePosts() {
-    const { posts } = this.props;
-    const userPosts = posts.filter(post => post.user === this.props.userId)
+    const { userId, posts } = this.props;
+    const userPosts = posts.filter(post => post.user === userId)
     return userPosts;
   }
 
@@ -40,6 +40,8 @@ class UserShow extends React.Component {
   }
 
   render() {
+    if (!this.handleUser()) return null;
+
     return (
       <div className="user-show-container">
         <NavBarContainer />

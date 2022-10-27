@@ -5,6 +5,13 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Shadows Into Light', cursive; */
 
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&family=Kalam&family=Merriweather&family=Titan+One&display=swap');
+/* font-family: 'Courgette', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Titan One', cursive; */
+
 .post-create-container {
   background-color: white;
   padding: 20px;
@@ -12,10 +19,18 @@ font-family: 'Shadows Into Light', cursive; */
   box-shadow: 1px 1px 10px rgb(180, 180, 180);
 }
 
+.post-create-container label {
+  margin-bottom: 5px;
+  font-family: 'Courgette', cursive;
+}
+
 .post-create-container > form {
-  font-family: 'Roboto';
   display: flex;
   flex-direction: column;
+}
+
+.post-create-container > form > h1 {
+  font-family: 'Courgette', cursive;
 }
 
 .captionbody {

@@ -9,6 +9,7 @@ export default function Trendings() {
     <ButtonGroup variant="contained" aria-label="outlined primary button group">
                     <Link to="USAStates/62448b561849f4854466119c">
                       <Button color="inherit" sx={{
+                        fontSize: 'min(max(10px, 1vw), 14px)',
                         backgroundColor: 'rgba(15,45,48,255)',
                         color: 'white',
                         '&:hover': {
@@ -22,6 +23,7 @@ export default function Trendings() {
 
                     <Link to="USAStates/62448ab71849f48544661164">
                       <Button color="inherit" sx={{
+                        fontSize: 'min(max(10px, 1vw), 14px)',
                         backgroundColor: 'rgba(15,45,48,255)',
                         color: 'white',
                         '&:hover': {
@@ -35,6 +37,7 @@ export default function Trendings() {
 
                     <Link to="USAStates/62448ad01849f4854466116c">
                       <Button color="inherit" sx={{
+                        fontSize: 'min(max(10px, 1vw), 14px)',
                         backgroundColor: 'rgba(15,45,48,255)',
                         color: 'white',
                         '&:hover': {
@@ -48,6 +51,7 @@ export default function Trendings() {
 
                     <Link to="USAStates/62448a8f1849f4854466115b">
                       <Button color="inherit" sx={{
+                        fontSize: 'min(max(10px, 1vw), 14px)',
                         backgroundColor: 'rgba(15,45,48,255)',
                         color: 'white',
                         '&:hover': {
@@ -61,6 +65,7 @@ export default function Trendings() {
 
                     <Link to="USAStates/62448b871849f485446611ae">
                       <Button color="inherit" sx={{
+                        fontSize: 'min(max(10px, 1vw), 14px)',
                         backgroundColor: 'rgba(15,45,48,255)',
                         color: 'white',
                         '&:hover': {
