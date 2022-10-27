@@ -5,9 +5,6 @@ import Splash1 from './svgs/splash-1.jsx'
 import Splash2 from './svgs/splash-2.jsx'
 import Splash3 from './svgs/splash-3.jsx'
 
-import Button from "@mui/material/Button";
-import Box from "@mui/material/Box";
-import Modal from '@mui/material/Modal';
 import NestedModal from './modal.jsx';
 
 
@@ -74,7 +71,6 @@ function Splash() {
         <>
             <div id='splash-background' className='splash-background'/>
             <div id='splash-stars' className='splash-stars'>
-                {/* <img src='https://mstp-dev.s3.us-west-2.amazonaws.com/utah-gd36c204b3_1920.jpg' alt='splash-stars'/> */}
             </div>
             <div className='splash-center-container'>
                 <div id='splash-circle' className='splash-circle'>

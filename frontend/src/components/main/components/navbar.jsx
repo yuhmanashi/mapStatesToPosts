@@ -13,16 +13,6 @@ function NavBar() {
       </div>
 
       <div className="navbar-right">
-        <a href="https://linkedin.com/in/deanding/" target="_blank">
-          {/* <button className="nav-button">
-            <div className="button-logo">
-              <img
-                src="https://deandingprojects.s3.us-east-2.amazonaws.com/linkedin-logo.png"
-                alt="linkedin-logo"
-              />
-            </div>
-          </button> */}
-        </a>
         <a href="https://github.com/yuhmanashi/mapStatesToPosts" target="_blank">
           <button className="nav-button">
             <div className="button-logo">
