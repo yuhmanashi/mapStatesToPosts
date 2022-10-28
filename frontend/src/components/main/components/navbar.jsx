@@ -13,7 +13,7 @@ function NavBar() {
       </div>
 
       <div className="navbar-right">
-        <a href="https://github.com/yuhmanashi/mapStatesToPosts" target="_blank">
+        <a href="https://github.com/yuhmanashi/mapStatesToPosts" target="_blank" rel="noreferrer">
           <button className="nav-button">
             <div className="button-logo">
               <img

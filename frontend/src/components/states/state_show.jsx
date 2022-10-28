@@ -1,7 +1,5 @@
 import React from 'react'; 
 import { Link } from 'react-router-dom'; 
-import CommentIndexContainer from '../comments/comment_index_container';
-import CreateCommentContainer from '../comments/create_comment_form_container';
 import './state_show.css';
 import '../posts/posts_index.css'
 import PostsIndexContainer from '../posts/posts_index_container';
@@ -13,7 +11,6 @@ import { MdTravelExplore } from 'react-icons/md'
 import { RiChatSmileFill, RiRoadMapFill} from 'react-icons/ri'
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import Box from '@mui/material/Box';
 
 
 import data from '../../data/usa-map-dimensions'
@@ -53,9 +50,8 @@ class StateShow extends React.Component{
 
     let posts = this.handlePosts(res)
     let latestPost = posts[0]
-    // let latestImageUrl = posts[0] ? latestPost.photo.location : "https://deandingprojects.s3.us-east-2.amazonaws.com/noimage.jpeg"
     
-    let itemData = posts[0] ? posts.slice(0 , 9) : [{photo:{location:"https://deandingprojects.s3.us-east-2.amazonaws.com/noimage.jpeg"}}]
+    let itemData = latestPost ? posts.slice(0 , 9) : [{photo:{location:"https://deandingprojects.s3.us-east-2.amazonaws.com/noimage.jpeg"}}]
     return (
       
       <div className="state-show-wrapper">
@@ -87,15 +83,12 @@ class StateShow extends React.Component{
                     </ImageListItem>
                     ))}
                     </ImageList>
-                    {/* <img src={latestImageUrl} alt=""/> */}
                   <br />
-                  <a href={statesData[res].funFactsUrl} target="_blank"><RiChatSmileFill /> More fun facts!</a>
+                  <a href={statesData[res].funFactsUrl} target="_blank" rel="noreferrer"><RiChatSmileFill /> More fun facts!</a>
                   <br />
-                  <a href={statesData[res].travelUrl} target="_blank"><MdTravelExplore /> Travel Info</a>
+                  <a href={statesData[res].travelUrl} target="_blank" rel="noreferrer"><MdTravelExplore /> Travel Info</a>
                 </div>
-                {/* <div className="morefiller">
-                  <p>filler</p>
-                </div> */}
+
               </div>
 
               <div className="filler">

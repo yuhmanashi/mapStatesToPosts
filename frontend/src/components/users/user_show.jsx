@@ -45,7 +45,7 @@ class UserShow extends React.Component {
     return (
       <div className="user-show-container">
         <NavBarContainer />
-        {/* <SideBar /> */}
+        <SideBar />
         
           <div className="user_details">
             <h1 className="user_name">{this.handleUser()}'s Posts</h1>

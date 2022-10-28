@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import './navbar.css'
-import { FaGithub, FaRegUserCircle, FaLinkedin } from 'react-icons/fa'
+import { FaRegUserCircle } from 'react-icons/fa'
 import Button from '@mui/material/Button';
 
 
