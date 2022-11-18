@@ -31,11 +31,18 @@ Try it live [here!](https://mapstatestoposts.herokuapp.com/#/)
 With mapStatesToPosts users can:
 
 - Signup / Signin to an account
+![Login](https://user-images.githubusercontent.com/83096156/202645829-1d81c97e-1b55-415e-8e85-06a93176eb90.gif)
 - View a personalized map where each state they have visited and uploaded a post/photo for is highlighted
+![map](https://user-images.githubusercontent.com/83096156/202645831-9017e317-50e8-4cde-873d-a6d6da587d9f.gif)
 - Click on any state to view general information and a fun fact about that state and see all other user's posts associated with that state. There are also external links to more fun facts and travel/tourism information.
+![state](https://user-images.githubusercontent.com/83096156/202645837-e7316dd0-6301-4896-80b4-63667bfce163.gif)
 - View a personalized user's page with all of their posts for all states they have visited
+![profile](https://user-images.githubusercontent.com/83096156/202645833-2a7d611e-3682-41fc-aabd-0cdc90eef66d.gif)
 - Create, read, edit, and delete a post with photo upload for a state they have visited (CRUD)
+![upload](https://user-images.githubusercontent.com/83096156/202645842-09bd14cf-8cb8-493b-b906-251bfe9b1050.gif)
 - Create, read, edit, and delete comments on other user's posts (CRUD)
+![CRUD](https://user-images.githubusercontent.com/83096156/202645821-c7633c55-9c59-414a-a356-6d403b26f224.gif)
+
 
 ## Coding Challenges
 
