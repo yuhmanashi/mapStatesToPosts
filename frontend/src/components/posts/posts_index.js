@@ -35,13 +35,9 @@ class PostsIndex extends React.Component {
     }
 
     return (
-      <ResponsiveMasonry
-        columnsCountBreakPoints={{400: 1, 500: 2, 800: 3, 1100: 4, 1500: 5}}
-      >
-        <Masonry className='mason'>
-          {postShow}
-        </Masonry>
-      </ResponsiveMasonry>
+      <div className='state-posts'>
+        {postShow}
+      </div>
     );
   }
 }

@@ -91,11 +91,7 @@ class StateShow extends React.Component{
 
               </div>
 
-              <div className="filler">
-                <div className='state-posts'>
-                  <PostsIndexContainer posts={this.handlePosts(res)}/>
-                </div>  
-              </div>
+              <PostsIndexContainer posts={this.handlePosts(res)}/>
             </div>
 
 

@@ -11,14 +11,16 @@ import ListItemText from '@mui/material/ListItemText';
 import './sidebar.css'
 import {states, ids} from './states_object'
 
-const drawerWidth = 240;
+//make drawer width responsive
+const drawerWidth = 150;
 
+//possibly make hamburger icons
 export default function SideBar() {
     let statesArr = Object.keys(states)
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
+      {/* <CssBaseline /> */}
       <Drawer
         variant="permanent"
         sx={{
@@ -44,7 +46,6 @@ export default function SideBar() {
                             return (<Link to={url}>
                                 <ListItem key={abb} disablePadding > 
                                 <ListItemButton>
-                                    <ListItemIcon/>
                                     <ListItemText primary={text} />
                                 </ListItemButton>
                                 </ListItem>

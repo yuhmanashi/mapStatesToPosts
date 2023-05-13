@@ -33,15 +33,15 @@ hr {
 
 .main {
     margin-top: 100px;
-    margin-left: 250px;
+    margin-left: 160px;
     height: 85%;
 }
-
+/* make main responsive*/
 /* Content */
 .content {    
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: left;
     height: 100%;
 }
 
@@ -106,7 +106,7 @@ hr {
 .trend-legend {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 95%;
     padding: 10px;
 }
 
@@ -121,7 +121,6 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
     height: 100%;
     background: white;
 
@@ -139,6 +138,7 @@ hr {
     font-size: min(max(14px, 1.2vw), 18px);
     font-family: 'Courgette', cursive;
     margin: 5px;
+    text-align: center;
 }
 
 /* Posts Container */
@@ -152,7 +152,6 @@ hr {
     align-items: center;
     flex-direction: column;
     margin: 20px;
-
     width: 40%;
     max-height: 800px;
 }
