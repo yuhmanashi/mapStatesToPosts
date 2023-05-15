@@ -5,6 +5,6 @@
 /* Media Query */
 @media screen and (max-width: 670px){
     .sidebar {
-        display: none;
+        
     }
 }

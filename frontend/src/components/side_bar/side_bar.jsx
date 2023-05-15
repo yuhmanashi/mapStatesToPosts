@@ -8,7 +8,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import './sidebar.css'
+import './side_bar.css'
 import {states, ids} from './states_object'
 
 //make drawer width responsive
@@ -18,15 +18,12 @@ let drawerWidth = 150;
 export default function SideBar(props) {
   let statesArr = Object.keys(states)
   const currentWidth = props.windowSize.width;
-  drawerWidth = currentWidth >= 670 ? 150 : 50;
-  console.log(currentWidth);
-  if (currentWidth <= 768) return null;
+  // drawerWidth = currentWidth >= 670 ? 150 : 0;
 
   return (
     <Box sx={{ display: 'flex' }}>
       {/* <CssBaseline /> */}
       <Drawer
-        variant="permanent"
         sx={{
           width: drawerWidth,
           flexShrink: 0,

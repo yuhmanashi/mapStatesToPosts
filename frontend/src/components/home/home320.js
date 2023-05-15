@@ -74,7 +74,7 @@ class HomePage extends Component {
           <div className="content">
             
               <div className="home-map">
-                {/* <div className='trend-legend'>
+                <div className='trend-legend'>
                   <div className='trending'>
                     <Button className='trending-title'>Trending States <FaFire/></Button>
                     <hr/>
@@ -90,7 +90,7 @@ class HomePage extends Component {
                       <div className='box'></div> Unvisited
                     </div>
                   </div>
-                </div> */}
+                </div>
                 <br/>
                 <USAMap title='' customize={this.statesFilling()} onClick={this.mapHandler} />
                 <div className='home-tag'>Click on a state to view the state's page!</div>

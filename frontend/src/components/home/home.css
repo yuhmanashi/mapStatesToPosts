@@ -32,7 +32,6 @@ hr {
 }
 
 .main {
-    margin-top: 100px;
     margin-left: 160px;
     height: 85%;
 }
@@ -167,6 +166,7 @@ hr {
 }
 
 /* Media Query */
+/* 320, 768, 1200 */
 @media screen and (max-width: 1200px){
     .content {    
         display: flex;
@@ -196,6 +196,8 @@ hr {
     }
 }
 
-@media screen and (max-width:320px){
-    
+@media (min-width: 320px) and (max-width: 768px){
+    .content {
+       margin-top: 100px;
+    }
 }
