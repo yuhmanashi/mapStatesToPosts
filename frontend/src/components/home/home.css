@@ -138,13 +138,15 @@ hr {
     font-size: min(max(14px, 1.2vw), 18px);
     font-family: 'Courgette', cursive;
     margin: 5px;
+    padding: 5px;
     text-align: center;
 }
 
 /* Posts Container */
 .scroller-title {
     font-size: min(max(18px, 2vw), 24px);
-    font-family: 'Courgette', cursive;;
+    font-family: 'Courgette', cursive;
+    padding: 20px;
 }
 
 .scroller {
@@ -164,4 +166,27 @@ hr {
     overflow-y: auto;
 }
 
+/* Media Query */
+@media screen and (max-width: 930px){
+    .content {    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
 
+    .scroller {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        margin: 20px;
+        max-height: 800px;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .content {
+        
+    }
+}

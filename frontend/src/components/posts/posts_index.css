@@ -123,3 +123,10 @@ font-family: 'Titan One', cursive; */
   padding: 10px;
   padding-bottom: 0;
 }
+
+/* Media Query */
+@media screen and (max-width: 930px){
+  .home-posts {
+    
+  }
+}
