@@ -100,7 +100,7 @@ hr {
 }
 
 .legend {
-    font-size: min(max(12px, 1vw), 16px);
+    font-size: min(max(12px, 1vw), 14px);
 }
 
 .trend-legend {
@@ -167,7 +167,7 @@ hr {
 }
 
 /* Media Query */
-@media screen and (max-width: 930px){
+@media screen and (max-width: 1200px){
     .content {    
         display: flex;
         flex-direction: column;
@@ -185,8 +185,17 @@ hr {
     }
 }
 
-@media screen and (max-width: 670px){
-    .content {
-        
+@media screen and (max-width: 768px){
+    .main {
+        margin-left: 50px;
     }
+
+    .us-state-map {
+        max-width: 50%;
+        max-height: 50%;
+    }
+}
+
+@media screen and (max-width:320px){
+    
 }

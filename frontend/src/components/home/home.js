@@ -9,7 +9,13 @@ import Button from '@mui/material/Button';
 import Trendings from './trendings.js'
 
 
-class HomePage extends Component {  
+class HomePage extends Component {
+  constructor(props){
+    super(props);
+    this.state = { width: 0, height: 0};
+    this.updateWindowSize = this.updateWindowSize.bind(this);
+  }
+
   mapHandler = (event) => {
     const stateName = event.target.dataset.name
     this.props.USAStates.forEach(USAState => {
@@ -41,10 +47,19 @@ class HomePage extends Component {
   }
 
   componentDidMount() {
-    this.props.fetchStates()
+    this.props.fetchStates();
+    this.updateWindowSize();
+    window.addEventListener('resize', this.updateWindowSize)
   }
 
+  componentWillUnmount(){
+    window.removeEventListener('resize', this.updateWindowSize)
+  }
 
+  updateWindowSize(){
+    this.setState({ width: window.innerWidth, height: window.innerHeight })
+  }
+  
   render() {
     const { posts, USAStates } = this.props;
     if (!posts || !USAStates) {
@@ -54,7 +69,7 @@ class HomePage extends Component {
     return (
       <div className="home">
         <NavBarContainer />
-        <SideBar />
+        <SideBar windowSize={this.state} />
         <main className="main">
           <div className="content">
             

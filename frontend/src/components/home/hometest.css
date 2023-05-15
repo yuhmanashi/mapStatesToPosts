@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Noto+Sans&family=Raleway:wght@100&family=Roboto:ital,wght@1,300&family=Shadows+Into+Light&family=Montserrat:wght@500&family=Quicksand:wght@500&display=swap');
+/* font-family: 'Leckerli One', cursive;
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&family=Kalam&family=Merriweather&family=Titan+One&display=swap');
+/* font-family: 'Courgette', cursive;
+font-family: 'Fjalla One', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'Merriweather', serif;
+font-family: 'Titan One', cursive; */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.hr-top, .hr-bottom {
+    border: 1px solid white;
+    margin: 0;
+}
+
+hr {
+    border: 1px solid white;
+    margin: 0;
+}
+
+/* Main */
+.main {
+    margin-top: 100px;
+    height: 85%;
+}

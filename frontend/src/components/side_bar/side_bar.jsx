@@ -12,11 +12,15 @@ import './sidebar.css'
 import {states, ids} from './states_object'
 
 //make drawer width responsive
-const drawerWidth = 150;
+let drawerWidth = 150;
 
 //possibly make hamburger icons
-export default function SideBar() {
-    let statesArr = Object.keys(states)
+export default function SideBar(props) {
+  let statesArr = Object.keys(states)
+  const currentWidth = props.windowSize.width;
+  drawerWidth = currentWidth >= 670 ? 150 : 50;
+  console.log(currentWidth);
+  if (currentWidth <= 768) return null;
 
   return (
     <Box sx={{ display: 'flex' }}>
