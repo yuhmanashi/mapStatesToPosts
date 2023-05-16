@@ -13,18 +13,32 @@ import {states, ids} from './states_object'
 
 //make drawer width responsive
 let drawerWidth = 150;
+let statesArr = Object.keys(states);
 
 //possibly make hamburger icons
-export default function SideBar(props) {
-  let statesArr = Object.keys(states)
-  const currentWidth = props.windowSize.width;
-  const currentHeight = props.windowSize.height;
-  console.log(currentWidth, currentHeight);
+class SideBar extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = { width: props.windowSize.width, height: props.windowSize.height }
+    this.widthHandler = this.widthHandler.bind(this);
+  }
   // drawerWidth = currentWidth >= 670 ? 150 : 0;
+  widthHandler(){
+    const { width, height } = this.state;
+    
+    return (
+      <Box sx={{}}/>
+    )
+  }
 
-  return (
-    <Box/>
-  )
+  render(){
+    this.widthHandler();
+    return (
+      <div className='sidebar'>
+        {this.widthHandler()}
+      </div>
+    )
+  }
 
   // return (
   //   <Box sx={{ height: currentHeight, display: 'flex' }}>
@@ -79,4 +93,4 @@ export default function SideBar(props) {
   // );
 }
 
-
+export default SideBar;
