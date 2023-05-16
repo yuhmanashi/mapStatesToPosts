@@ -15,9 +15,8 @@ import {states, ids} from './states_object'
 let drawerWidth = 150;
 
 //possibly make hamburger icons
-export default function SideBar(props) {
+export default function SideBar() {
   let statesArr = Object.keys(states)
-  const currentWidth = props.windowSize.width;
   // drawerWidth = currentWidth >= 670 ? 150 : 0;
 
   return (

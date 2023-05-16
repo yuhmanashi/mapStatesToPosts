@@ -96,7 +96,7 @@ font-family: 'Mali', cursive;
   min-width: 100%;
   justify-content: center;
   align-items: center;
-
+  top: 0;
   background-color: #0291b3;
 }
 

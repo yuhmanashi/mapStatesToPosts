@@ -3,7 +3,7 @@ import './home.css';
 import USAMap from "react-usa-map";
 import PostsIndexContainer from '../posts/posts_index_container'; 
 import NavBarContainer from '../navbar/navbar_container';
-import SideBar from "../side_bar/side_bar.jsx";
+import SideBar from "../side_bar/side_bar_test";
 import { AiFillFire, FaFire, ImFire, RiFireFill, MdLocalFireDepart } from 'react-icons/fa'
 import Button from '@mui/material/Button';
 import Trendings from './trendings.js'
@@ -69,12 +69,12 @@ class HomePage extends Component {
     return (
       <div className="home">
         <NavBarContainer />
-        <SideBar windowSize={this.state} />
         <main className="main">
+          <SideBar windowSize={this.state} />
           <div className="content">
             
               <div className="home-map">
-                {/* <div className='trend-legend'>
+                <div className='trend-legend'>
                   <div className='trending'>
                     <Button className='trending-title'>Trending States <FaFire/></Button>
                     <hr/>
@@ -90,7 +90,7 @@ class HomePage extends Component {
                       <div className='box'></div> Unvisited
                     </div>
                   </div>
-                </div> */}
+                </div>
                 <br/>
                 <USAMap title='' customize={this.statesFilling()} onClick={this.mapHandler} />
                 <div className='home-tag'>Click on a state to view the state's page!</div>
