@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './home2.css';
 import USAMap from "react-usa-map";
 import PostsIndexContainer from '../posts/posts_index_container'; 
-import NavBarContainer from '../navbar/navbar_container';
+import NavBarContainer from '../navbar/home_navbar_container';
 import SideBar from "../side_bar/side_bar_test";
 import { AiFillFire, FaFire, ImFire, RiFireFill, MdLocalFireDepart } from 'react-icons/fa'
 import Button from '@mui/material/Button';
