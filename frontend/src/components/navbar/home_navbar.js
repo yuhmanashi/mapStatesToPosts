@@ -42,10 +42,10 @@ class NavBar extends React.Component {
 
   render() {
       return (
-        <div className="navbar">
-          <div className="navbar-left">
+        <div className="home-navbar">
+          <div className="home-navbar-left">
             <Link to="/home">        
-              <div className="personal-logo">
+              <div className="home-personal-logo">
                 <img
                   src="https://deandingprojects.s3.us-east-2.amazonaws.com/mstp-icon.png"
                   alt="mstp-logo"
@@ -54,8 +54,8 @@ class NavBar extends React.Component {
             </Link>
           </div>
             
-          <div className="navbar-right">
-            <div className='hamburger'>
+          <div className="home-navbar-right">
+            <div className='home-hamburger'>
               <DehazeIcon/>
             </div>
             {/* <div className='nav-buttons'>

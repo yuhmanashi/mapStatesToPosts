@@ -5,7 +5,7 @@ font-family: 'Mali', cursive;
 */
 
 /* Nav buttons */
-.nav-buttons {
+.home-nav-buttons {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
@@ -13,12 +13,12 @@ font-family: 'Mali', cursive;
   margin-right: 30px;
 }
 
-.nav-buttons > * {
+.home-nav-buttons > * {
   margin: 10px;
 }
 
 /* dropdown */
-.user-icon {
+.home-user-icon {
   width: 60px;
   height: 60px;
   display: flex;
@@ -26,7 +26,7 @@ font-family: 'Mali', cursive;
   justify-content: center;
 }
 
-.user-icon svg {
+.home-user-icon svg {
   background-color: transparent;
   color: black;
   font-family: sans-serif;
@@ -37,15 +37,15 @@ font-family: 'Mali', cursive;
   margin: 0;
 }
 
-.user-icon:hover {
+.home-user-icon:hover {
   cursor: pointer;
 }
 
-.user-icon:hover .user-dropdown{
+.home-user-icon:hover .user-dropdown{
   display: block;
 }
 
-.user-dropdown {
+.home-user-dropdown {
   list-style: none; 
   position: absolute;
   display: none;
@@ -65,22 +65,22 @@ font-family: 'Mali', cursive;
   font: bold 15px 'Open Sans Condensed', sans-serif;
 }
 
-.user-dropdown a {
+.home-user-dropdown a {
   text-decoration: none;
   color: black;
 }
 
-.user-dropdown > * {
+.home-user-dropdown > * {
   margin: 10px;
 }
 
-.user-dropdown hr {
+.home-user-dropdown hr {
   border: none;
   border-top: 1px solid black;
   margin: 0;
 }
 
-.create-post:hover, .user-icon:hover svg, #profile a:hover, .user-dropdown > *:hover {
+.home-create-post:hover, .home-user-icon:hover svg, #profile a:hover, .home-user-dropdown > *:hover {
   color: rgb(87, 87, 87);
 }
 
@@ -88,7 +88,7 @@ font-family: 'Mali', cursive;
 
 } */
 
-.navbar {
+.home-navbar {
   display: flex;
   z-index: 5000;
   position: fixed;
@@ -107,32 +107,32 @@ font-family: 'Mali', cursive;
     }
   } */
 
-.navbar-left {
+.home-navbar-left {
   display: flex;
   justify-content: flex-start;
 }
 
-.navbar-right {
+.home-navbar-right {
   display: flex;
   justify-content: flex-end;
 }
 
-.personal-logo {
+.home-personal-logo {
     margin: 0;
     cursor: pointer;
     opacity: 80%;
     transition: opacity .2s ease-in, top .2s ease;
 }
 
-.personal-logo:hover {
+.home-personal-logo:hover {
     opacity: 100%;
 }
 
-.personal-logo > img {
+.home-personal-logo > img {
   width: 50%
 }
 
-.nav-button {
+.home-nav-button {
     background-color: rgb(129, 178, 154, 0);
     transition: opacity .2s ease-in, top .2s ease;
     color: white;
@@ -145,7 +145,7 @@ font-family: 'Mali', cursive;
     
 }
 
-.button-logo {
+.home-button-logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,16 +153,16 @@ font-family: 'Mali', cursive;
     cursor: pointer;
 }
 
-.button-logo > img {
+.home-button-logo > img {
     max-width: 30px;
     min-width: 30px;
 }
 
-.nav-button:hover {
+.home-nav-button:hover {
     opacity: 100%;    
 }
 
-.nav-button:active {
+.home-nav-button:active {
     position: relative;
     top: 1px;
 }
