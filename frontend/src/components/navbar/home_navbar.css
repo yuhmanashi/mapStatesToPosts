@@ -18,9 +18,9 @@ font-family: 'Mali', cursive;
 }
 
 /* dropdown */
-.home-user-icon {
-  width: 60px;
-  height: 60px;
+/* .home-user-icon {
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,15 +33,15 @@ font-family: 'Mali', cursive;
   font-weight: bold;
   border: none;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 30px;
   margin: 0;
-}
+} */
 
 .home-user-icon:hover {
   cursor: pointer;
 }
 
-.home-user-icon:hover .user-dropdown{
+.home-user-icon:hover .home-user-dropdown{
   display: block;
 }
 
@@ -51,7 +51,7 @@ font-family: 'Mali', cursive;
   display: none;
 
   padding: 0;
-  top: 75px;
+  top: 50px;
   right: 0;
 
   width: 100px;
