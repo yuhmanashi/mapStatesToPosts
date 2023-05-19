@@ -56,25 +56,16 @@ class NavBar extends React.Component {
             
           <div className="home-navbar-right">
             <div className='home-user-icon'>
-              <DehazeIcon/>
+              <FaRegUserCircle />
               <ul className="home-user-dropdown">
                 <div id='profile'>
                   <Link to={`/users/${this.props.userId}`}>Profile</Link>
                 </div>
-                <div id='states-list'>States</div>
-                <div id='trending'>Trending</div>
-                <div id='create-post'>Create Post</div>
                 <div id='about-us' onClick={this.aboutUsModal}>About Us</div>
                 <hr/>
                 <div id='logout-btn' onClick={this.props.logout}>Logout</div>
               </ul>
             </div>
-          </div>
-            {/* <div className='home-user-icon'>
-                <FaRegUserCircle />
-                
-              </div>
-            </div> */}
             {/* <div className='nav-buttons'>
               <Button color="inherit" sx={{
                 // width: '140px',
@@ -102,7 +93,7 @@ class NavBar extends React.Component {
                 </ul>
               </div>
             </div> */}
-          
+          </div>
         </div>
       );
   }

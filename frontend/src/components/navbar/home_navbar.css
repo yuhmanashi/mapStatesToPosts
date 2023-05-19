@@ -18,7 +18,7 @@ font-family: 'Mali', cursive;
 }
 
 /* dropdown */
-/* .home-user-icon {
+.home-user-icon {
   width: 50px;
   height: 50px;
   display: flex;
@@ -35,13 +35,13 @@ font-family: 'Mali', cursive;
   text-decoration: none;
   font-size: 30px;
   margin: 0;
-} */
+}
 
 .home-user-icon:hover {
   cursor: pointer;
 }
 
-.home-user-icon:hover .home-user-dropdown{
+.home-user-icon:hover .home-user-dropdown {
   display: block;
 }
 
