@@ -94,11 +94,10 @@ font-family: 'Mali', cursive;
   position: fixed;
   width: 100%;
   height: 10%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   top: 0;
   background-color: #0291b3;
-  padding: 10px;
 }
 
 /* @media (max-width: 750px) {
@@ -110,11 +109,13 @@ font-family: 'Mali', cursive;
 .home-navbar-left {
   display: flex;
   justify-content: flex-start;
+  padding: 10px;
 }
 
 .home-navbar-right {
   display: flex;
   justify-content: flex-end;
+  padding: 10px;
 }
 
 .home-personal-logo {
@@ -129,7 +130,7 @@ font-family: 'Mali', cursive;
 }
 
 .home-personal-logo > img {
-  width: 50%
+  width: 25%
 }
 
 .home-nav-button {
