@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import './home_navbar.css'
 import { FaRegUserCircle } from 'react-icons/fa'
 import Button from '@mui/material/Button';
 import DehazeIcon from '@mui/icons-material/Dehaze';
+import Dropdown from './dropdown';
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -15,8 +16,8 @@ class NavBar extends React.Component {
   }
 
   logoutUser(e) {
-      e.preventDefault();
-      this.props.logout();
+    e.preventDefault();
+    this.props.logout();
   }
 
   // Selectively render links dependent on whether the user is logged in
@@ -56,15 +57,15 @@ class NavBar extends React.Component {
             
           <div className="home-navbar-right">
             <div className='home-user-icon'>
-              <FaRegUserCircle />
-              <ul className="home-user-dropdown">
+              <Dropdown props={this.props}/>
+              {/* <ul className="home-user-dropdown">
                 <div id='profile'>
                   <Link to={`/users/${this.props.userId}`}>Profile</Link>
                 </div>
                 <div id='about-us' onClick={this.aboutUsModal}>About Us</div>
                 <hr/>
                 <div id='logout-btn' onClick={this.props.logout}>Logout</div>
-              </ul>
+              </ul> */}
             </div>
             {/* <div className='nav-buttons'>
               <Button color="inherit" sx={{
