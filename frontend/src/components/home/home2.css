@@ -163,6 +163,12 @@ hr {
     overflow-y: auto;
 }
 
+.tabs {
+    z-index: 1000;
+    position: fixed;
+    top: 50px;
+    width: 100%;
+}
 /* Media Query */
 /* 320, 768, 1200 */
 /* @media screen and (max-width: 1200px){

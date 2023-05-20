@@ -8,6 +8,7 @@ import SideBar from "../side_bar/side_bar_test";
 import { AiFillFire, FaFire, ImFire, RiFireFill, MdLocalFireDepart } from 'react-icons/fa'
 import Button from '@mui/material/Button';
 import Trendings from './trendings.js'
+import HomeTabs from '../navbar/tabs';
 
 
 class HomePage extends Component {
@@ -70,7 +71,9 @@ class HomePage extends Component {
     return (
       <div className="home">
         <NavBarContainer />
-        {/* <NavBar2Container /> */}
+        <div className='tabs'>
+          <HomeTabs />
+        </div>
         <main className="main">
           <SideBar windowSize={this.state} />
           <div className="content">
