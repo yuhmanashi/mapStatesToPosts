@@ -168,6 +168,9 @@ hr {
     position: fixed;
     top: 50px;
     width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
 }
 /* Media Query */
 /* 320, 768, 1200 */

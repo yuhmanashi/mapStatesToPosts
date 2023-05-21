@@ -10,24 +10,27 @@ import {states, ids} from './states_object'
 import { Link } from 'react-router-dom';
 
 export default function StatesDrawer() {
-  const [state, setState] = React.useState(false);
+  const [state, setState] = React.useState({
+    top: false,
+    left: false,
+  });
 
-  const toggleDrawer = (open) => (event) => {
+  const toggleDrawer = (anchor, open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
       return;
     }
 
-    setState(open);
+    setState({...state, [anchor]: open});
   };
 
   const statesArr = Object.keys(states);
 
   const list = () => (
     <Box
-      sx={{ width: 100 }}
+      sx={{ width: 150 }}
       role="presentation"
-      onClick={toggleDrawer(false)}
-      onKeyDown={toggleDrawer(false)}
+      onClick={toggleDrawer('left', false)}
+      onKeyDown={toggleDrawer('left', false)}
     >
       <List>
       {
@@ -59,22 +62,22 @@ export default function StatesDrawer() {
 
   return (
     <div>
-        <React.Fragment>
-            <Button onClick={toggleDrawer(true)}>All States</Button>
+        <React.Fragment >
+            <Button onClick={toggleDrawer('left', true)}>All States</Button>
             <Drawer
                 anchor='left'
-                open={state}
-                onClose={toggleDrawer(false)}
+                open={state['left']}
+                onClose={toggleDrawer('left', false)}
             >
                 {list()}
             </Drawer>
-            <Button onClick={toggleDrawer(true)}>Trending</Button>
+            <Button onClick={toggleDrawer('top', true)}>Trending</Button>
             <Drawer
                 anchor='top'
-                open={state}
-                onClose={toggleDrawer(false)}
+                open={state['top']}
+                onClose={toggleDrawer('top', false)}
             >
-                {list()}
+                {'trending state stuff here'}
             </Drawer>
             <Button>Create Post</Button>
         </React.Fragment>
