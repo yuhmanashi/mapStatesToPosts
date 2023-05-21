@@ -8,6 +8,9 @@ font-family: 'Titan One', cursive; */
 .about-us-modal-child {
     display: flex;
     justify-content: center;
+
+    top: 90px;
+    position: fixed;
 }
 
 .about-us-container {
@@ -29,6 +32,7 @@ font-family: 'Titan One', cursive; */
     padding: 10px;
 
     display: flex;
+    flex-direction: column;
 }
 
 .about-us > ul {

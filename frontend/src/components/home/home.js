@@ -9,7 +9,7 @@ import { AiFillFire, FaFire, ImFire, RiFireFill, MdLocalFireDepart } from 'react
 import Button from '@mui/material/Button';
 import Trendings from './trendings.js'
 import HomeTabs from '../navbar/tabs';
-
+import StatesDrawer from '../side_bar/states_drawer';
 
 class HomePage extends Component {
   constructor(props){
@@ -72,7 +72,8 @@ class HomePage extends Component {
       <div className="home">
         <NavBarContainer />
         <div className='tabs'>
-          <HomeTabs />
+          {/* <HomeTabs /> */}
+          <StatesDrawer />
         </div>
         <main className="main">
           <SideBar windowSize={this.state} />

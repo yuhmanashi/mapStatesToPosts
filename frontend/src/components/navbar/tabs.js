@@ -4,18 +4,22 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 
 export default function HomeTabs() {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(-1);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
+  //all states - open sidebar of all states
+  //show trending states
+  //create post - opens create post modal
+
   return (
     <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
       <Tabs sx={{ minHeight: 0 }} value={value} onChange={handleChange} centered>
-        <Tab sx={{ minHeight: 0, py: 1 }} label="Item One" />
-        <Tab sx={{ minHeight: 0, py: 1 }} label="Item Two" />
-        <Tab sx={{ minHeight: 0, py: 1 }} label="Item Three" />
+        <Tab sx={{ minHeight: 0, px: 1.5, py: 1 }} label="All States" />
+        <Tab sx={{ minHeight: 0, px: 1.5, py: 1 }} label="Trending" />
+        <Tab sx={{ minHeight: 0, px: 1.5, py: 1 }} label="Create Post" />
       </Tabs>
     </Box>
   );
