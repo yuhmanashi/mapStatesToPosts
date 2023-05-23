@@ -70,8 +70,8 @@ class StateShow extends React.Component{
                 <Link to={`/`}><RiRoadMapFill/> Back to Map </Link>
                 <div className='state-title'>{statesData[res].name}</div>
                 <div className='recent-posts'>
-                  <div className='state-title'>Most Recent Photos</div>
-                  <ImageList sx={{ width: 600, height: 600 }} cols={2} rowHeight={300}>
+                  <div className='state-title'>Recent Photos</div>
+                  <ImageList sx={{ width: 600, height: 300 }} cols={2} rowHeight={300}>
                   {itemData.map((item) => (
                     <ImageListItem key={item.photo.location}>
                       <img
@@ -93,7 +93,9 @@ class StateShow extends React.Component{
                 <div className="funfact">
                   <div className='state-title'>Fun Fact of {statesData[res].name}</div>
                   <p>{statesData[res].funFacts}</p>
+                  <br/>
                   <a href={statesData[res].funFactsUrl} target="_blank" rel="noreferrer"><RiChatSmileFill /> More fun facts!</a>
+                  <br/>
                   <a href={statesData[res].travelUrl} target="_blank" rel="noreferrer"><MdTravelExplore /> Travel Info</a>
                 </div>
 

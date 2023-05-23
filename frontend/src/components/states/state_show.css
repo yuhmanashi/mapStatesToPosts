@@ -36,7 +36,8 @@ font-family: 'Shadows Into Light', cursive; */
 .state-content {
   display: flex;
   justify-content: center;
-  max-height: 900px;
+  align-items: center;
+  height: 100%;
 }
 
 .morefiller {
@@ -77,17 +78,17 @@ font-family: 'Shadows Into Light', cursive; */
 }
 
 /*Posts*/
-.state-posts {
+/* .state-posts {
   max-height: 20%;
   margin-top: 25px;
   overflow-y: auto;
   min-width: 50%;
-}
+} */
 
-.state-posts div {
+/* .state-posts div {
   scroll-snap-align: start;
 }
 
 .posts {
   max-height: 100%;
-}
+} */
