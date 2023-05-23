@@ -15,16 +15,17 @@ font-family: 'Shadows Into Light', cursive; */
 
 /*State Info*/
 .state-main {
+  margin-top: 100px;
+  margin-left: 160px;
+  height: 85%;
+}
+
+/* .state-top {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding-top: 65px;
-}
-
-.state-top {
-  display: flex;
-
-}
+  align-items: center;
+  height: 100%;
+} */
 
 .morefiller {
   height: 200px;
@@ -64,7 +65,8 @@ font-family: 'Shadows Into Light', cursive; */
 
 /*Posts*/
 .state-posts {
-  height: 1000px;
+  max-height: 20%;
+  margin-top: 25px;
   overflow-y: auto;
   min-width: 50%;
 }
@@ -73,3 +75,6 @@ font-family: 'Shadows Into Light', cursive; */
   scroll-snap-align: start;
 }
 
+.posts {
+  max-height: 100%;
+}

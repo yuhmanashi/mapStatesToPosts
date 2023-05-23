@@ -20,6 +20,7 @@ class StateShow extends React.Component{
   constructor(props){
     super(props); 
     this.handlePosts = this.handlePosts.bind(this);
+    this.handleNoPosts = this.handleNoPosts.bind(this);
   }
 
   componentDidMount() {
@@ -34,7 +35,13 @@ class StateShow extends React.Component{
     return statePosts
   }
 
-
+  handleNoPosts(posts){
+    if (posts.length){
+      return <PostsIndexContainer posts={posts}/>
+    } else {
+      return <div className='no-posts'>No posts yet</div>
+    }
+  }
   
   render() {
     const { USAStates, stateId } = this.props;
@@ -50,16 +57,16 @@ class StateShow extends React.Component{
 
     let posts = this.handlePosts(res)
     let latestPost = posts[0]
-    
+
     let itemData = latestPost ? posts.slice(0 , 9) : [{photo:{location:"https://deandingprojects.s3.us-east-2.amazonaws.com/noimage.jpeg"}}]
     return (
       
       <div className="state-show-wrapper">
           <NavBarContainer />
+          <SideBar />
           <div className="state-main">
-            <div className="state-top">
+            <div className="content">
               {/* change to modal */}
-              <SideBar />
               <div className="state-info">
                 <Link to={`/`}><RiRoadMapFill/> Back to Map </Link>
                 <div>
@@ -91,11 +98,12 @@ class StateShow extends React.Component{
 
               </div>
 
-              <div className="filler">
-                <div className='state-posts'>
-                  <PostsIndexContainer posts={this.handlePosts(res)}/>
-                </div>  
+              <div className='scroller'>
+                <div className='scroller-title'>All</div>
+                {this.handleNoPosts(posts)}
               </div>
+              
+              
             </div>
 
 

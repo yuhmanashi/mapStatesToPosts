@@ -11,7 +11,7 @@ import ListItemText from '@mui/material/ListItemText';
 import './sidebar.css'
 import {states, ids} from './states_object'
 
-const drawerWidth = 240;
+const drawerWidth = 160;
 
 export default function SideBar() {
     let statesArr = Object.keys(states)
@@ -39,12 +39,17 @@ export default function SideBar() {
                         if(idObject["name"] === abb){
                             let stateId = idObject["_id"]
                             let url = "/USAStates/" + stateId
-                            let text = ele.charAt(0).toUpperCase() + ele.slice(1).toLowerCase(); 
+                            let words = ele.split(' ');
+                            let newWords = [];
+                            for (let word of words){
+                              let newWord = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+                              newWords.push(newWord)
+                            }
+                            let text = newWords.join(' '); 
                             
                             return (<Link to={url}>
                                 <ListItem key={abb} disablePadding > 
                                 <ListItemButton>
-                                    <ListItemIcon/>
                                     <ListItemText primary={text} />
                                 </ListItemButton>
                                 </ListItem>
