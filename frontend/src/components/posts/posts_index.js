@@ -30,12 +30,12 @@ class PostsIndex extends React.Component {
         />
       )});
     
-    if (page === 'home'){
-      return <div className='home-posts'>{postShow}</div>
-    }
+    // if (page === 'home'){
+    //   return <div className='home-posts'>{postShow}</div>
+    // }
 
     return (
-      <div className='posts'>{postShow}</div>
+      <div className='home-posts'>{postShow}</div>
     );
   }
 }
