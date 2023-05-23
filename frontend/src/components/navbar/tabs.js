@@ -17,7 +17,7 @@ export default function HomeTabs() {
   return (
     <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
       <Tabs sx={{ minHeight: 0 }} value={value} onChange={handleChange} centered>
-        <Tab sx={{ minHeight: 0, px: 1.5, py: 1 }} label="All States" />
+        <Tab sx={{ minHeight: 0, px: 1.5, py: 1 }} label="All States"></Tab>
         <Tab sx={{ minHeight: 0, px: 1.5, py: 1 }} label="Trending" />
         <Tab sx={{ minHeight: 0, px: 1.5, py: 1 }} label="Create Post" />
       </Tabs>
