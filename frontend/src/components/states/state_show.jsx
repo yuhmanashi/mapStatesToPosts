@@ -60,25 +60,18 @@ class StateShow extends React.Component{
 
     let itemData = latestPost ? posts.slice(0 , 9) : [{photo:{location:"https://deandingprojects.s3.us-east-2.amazonaws.com/noimage.jpeg"}}]
     return (
-      
       <div className="state-show-wrapper">
           <NavBarContainer />
           <SideBar />
           <div className="state-main">
-            <div className="content">
+            <div className="state-content">
               {/* change to modal */}
               <div className="state-info">
                 <Link to={`/`}><RiRoadMapFill/> Back to Map </Link>
-                <div>
-                  <h1>{statesData[res].name}</h1>
-                  <p>{statesData[res].description}</p>
-                </div>
-                
-                <div className="funfact">
-                  <h1>Fun Fact of {statesData[res].name}</h1>
-                  <p>{statesData[res].funFacts}</p>
-                  <h1>Most Recent Photos</h1>
-                  <ImageList sx={{ width: 600, height: 600 }} cols={2} rowHeight={300}>
+                <div className='state-title'>{statesData[res].name}</div>
+                <div className='recent-posts'>
+                  <div className='state-title'>Recent Photos</div>
+                  <ImageList sx={{ width: 600, height: 300 }} cols={2} rowHeight={300}>
                   {itemData.map((item) => (
                     <ImageListItem key={item.photo.location}>
                       <img
@@ -89,24 +82,31 @@ class StateShow extends React.Component{
                     />
                     </ImageListItem>
                     ))}
-                    </ImageList>
-                  <br />
+                  </ImageList>
+                </div>
+                
+                <div className='state-desc'>
+                  <div className='state-title'>Description</div>
+                  {statesData[res].description}
+                </div>
+                
+                <div className="funfact">
+                  <div className='state-title'>Fun Fact of {statesData[res].name}</div>
+                  <p>{statesData[res].funFacts}</p>
+                  <br/>
                   <a href={statesData[res].funFactsUrl} target="_blank" rel="noreferrer"><RiChatSmileFill /> More fun facts!</a>
-                  <br />
+                  <br/>
                   <a href={statesData[res].travelUrl} target="_blank" rel="noreferrer"><MdTravelExplore /> Travel Info</a>
                 </div>
 
               </div>
 
               <div className='scroller'>
-                <div className='scroller-title'>All</div>
+                <div className='scroller-title'>All State Posts</div>
                 {this.handleNoPosts(posts)}
               </div>
-              
-              
+
             </div>
-
-
           </div>
       </div>
     )
